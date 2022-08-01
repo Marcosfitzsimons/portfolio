@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent: #147b74;
+    /* or any other variables/style */
+  }
+  [data-theme="red"] {
+    --accent: #c4032a;
+  }
+  [data-theme="pink"] {
+    --accent: #df4996;
+  }
+  [data-theme="blue"] {
+    --accent: #207ecc;
+  }
+  body {
+    font-size: 16px;
+    font-family: ;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  .section {
+    background-color: #151515;
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    z-index: 0;
+    opacity: 1;
+    padding: 30px;
+  }
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .home__illustration::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--accent);
+    border-right: 10px solid var(--accent);
+    right: -10px;
+    bottom: -40px;
+  }
+  .home__illustration::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--accent);
+    border-left: 10px solid var(--accent);
+    left: -20px;
+    top: -40px;
+  }
+
+  .aside .logo a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--accent);
+    border-left: 5px solid var(--accent);
+    bottom: 0;
+    left: 0;
+  }
+  .aside .logo a::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    top: 0;
+    right: 0;
+  }
+
+  .nav-list__link.active {
+    color: var(--accent);
+    transition: 0.2s ease-in;
+  }
+  .nav-list__link.active:hover,
+  .nav-list__link.active:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--accent);
+    transform: translateY(-0.25em);
+    border-bottom: 1px solid var(--accent);
+  }
 }
