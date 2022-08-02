@@ -8,6 +8,8 @@ import NavToggle from "./NavToggle";
 const MainContent = () => {
   const showAside = () => {
     const aside = document.querySelector(".aside");
+    const navToggle = document.querySelector(".nav-toggle");
+    navToggle.classList.toggle("active");
     aside.classList.toggle("hidden");
   };
 

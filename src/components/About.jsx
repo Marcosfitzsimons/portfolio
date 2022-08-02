@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const About = () => {
   return (
@@ -57,12 +58,23 @@ const About = () => {
                   </li>
                 </ul>
                 <div className="about-buttons-container flex flex-col w-full sm:w-auto sm:flex-row gap-5">
-                  <button className="btn btn-accent w-full sm:w-36">
-                    Download CV
-                  </button>
-                  <button className="btn btn-accent w-full sm:w-36">
+                  <div className="indicator w-full sm:w-36 opacity-90">
+                    <span className="indicator-item badge hidden sm:flex sm:left-2 select-none bg-transparent text-neutral z-10">
+                      unavailable
+                    </span>
+                    <button className="btn btn-accent w-full sm:w-36 cursor-default bg-transparent z-0 hover:bg-transparent">
+                      Download CV
+                    </button>
+                  </div>
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="btn btn-accent w-full sm:w-36"
+                  >
                     Hire Me
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

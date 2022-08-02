@@ -5,7 +5,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const Aside = () => {
   return (
-    <div className="aside w-72 bg-secondary text-neutral fixed left-0 top-0 z-20 h-full border-r-text-base border-r hidden lg:block">
+    <div className="aside w-72 bg-secondary text-neutral fixed left-0 top-0 h-full z-10 border-r-accent/20 border-r hidden lg:block shadow-lg shadow-white/20">
       <div className="h-full flex justify-center items-center">
         <div className="logo absolute top-12 text-3xl capitalize">
           <Link

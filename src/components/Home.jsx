@@ -1,6 +1,7 @@
 import React from "react";
 import HomeIllustration from "./HomeIllustration";
 import Typed from "typed.js";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Home = () => {
   const el = React.useRef(null);
@@ -53,9 +54,15 @@ const Home = () => {
               ipsum dolor sit amet consectetur adipisicing elit. Similique,
               iste.
             </p>
-            <a href="#about" className="btn btn-accent hire-me w-[9rem]">
+            <Link
+              to="about"
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="btn btn-accent hire-me w-[9rem]"
+            >
               About Me
-            </a>
+            </Link>
           </div>
           <HomeIllustration />
         </div>

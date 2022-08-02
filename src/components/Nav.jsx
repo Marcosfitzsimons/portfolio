@@ -18,7 +18,7 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="cursor-pointer nav-list__link home-link active flex items-center gap-3 mt-12 text-xl font-semibold py-2 px-4 border-b border-slate-700"
+            className="cursor-pointer nav-list__link home-link flex items-center gap-3 mt-12 text-xl font-semibold py-2 px-4 border-b border-accent/20"
           >
             <RiHome4Line className="text-xl" /> Home
           </Link>
@@ -29,7 +29,7 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="cursor-pointer nav-list__link portfolio-link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-slate-700"
+            className="cursor-pointer nav-list__link portfolio-link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-accent/20"
           >
             <RiBookmark3Line className="text-xl" /> Projects
           </Link>
@@ -40,7 +40,7 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="cursor-pointer nav-list__link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-slate-700"
+            className="cursor-pointer nav-list__link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-accent/20"
           >
             <RiUserHeartLine className="text-xl" /> About
           </Link>
@@ -51,7 +51,7 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="cursor-pointer nav-list__link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-slate-700"
+            className="cursor-pointer nav-list__link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-accent/20"
           >
             <RiQuestionAnswerLine className="text-xl" /> Contact
           </Link>
