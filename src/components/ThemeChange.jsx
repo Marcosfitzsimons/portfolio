@@ -18,7 +18,10 @@ const ThemeChange = () => {
       onClick={showThemeSwitcher}
       className="theme-switcher w-[10rem] fixed right-[-9.5rem] top-10 rounded-lg shadow-md shadow-neutral/30 cursor-pointer hover:right-0 transition-all"
     >
-      <div className="open-theme-switcher shadow-md shadow-neutral/30 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center">
+      <div
+        onClick={showThemeSwitcher}
+        className="open-theme-switcher shadow-md shadow-neutral/30 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center"
+      >
         <FaPalette className="text-neutral/80" />
       </div>
       <ul className="flex flex-col w-full bg-secondary border-2 border-secondary/70 p-3">
