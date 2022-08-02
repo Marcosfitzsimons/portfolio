@@ -15,10 +15,11 @@ const Home = () => {
             </h1>
             <h2 className="font-bold home__profession text-3xl lg:text-4xl my-4 mx-0">
               I'm a{" "}
-              <span className="typing text-accent">FrontEnd Developer</span>
+              <span className="typing text-accent">Front-End Developer </span>
             </h2>
             <p className="home__description mb-[70px] text-lg lg:text-xl text-base-100">
-              I'm a FrontEnd developer with Lorem ipsum dolor sit amet. Lorem
+              I'm a front-end developer who enjoys creating beautiful and
+              functional user experiences. Lorem ipsum dolor sit amet. Lorem
               ipsum dolor sit amet consectetur adipisicing elit. Similique,
               iste.
             </p>
