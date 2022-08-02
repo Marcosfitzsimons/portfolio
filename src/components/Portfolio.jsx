@@ -2,7 +2,10 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio section text-neutral min-h-screen">
+    <section
+      className="portfolio section text-neutral min-h-screen"
+      name="portfolio"
+    >
       <div className="container pb-10">
         <div className="row">
           <div className="basis-full grow-0 shrink-0 py-4 max-w-full mb-[60px]">

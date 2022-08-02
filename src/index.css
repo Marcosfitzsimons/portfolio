@@ -85,11 +85,18 @@
     color: var(--accent);
     transition: 0.2s ease-in;
   }
-  .nav-list__link.active:hover,
-  .nav-list__link.active:focus {
+
+  .nav-list__link {
+    transition: 0.2s ease-in;
+  }
+
+  .nav-list__link:hover,
+  .nav-list__link:focus,
+  .nav-list__link.active {
     box-shadow: 0 0.5em 0.5em -0.4em var(--accent);
     transform: translateY(-0.25em);
     border-bottom: 1px solid var(--accent);
+    color: var(--accent);
   }
   .open-theme-switcher {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);

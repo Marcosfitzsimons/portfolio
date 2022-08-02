@@ -26,7 +26,10 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="home section text-neutral min-h-screen flex">
+    <section
+      className="home section text-neutral min-h-screen flex"
+      title="home"
+    >
       <div className="container">
         <div className="row flex flex-wrap -mx-4 relative">
           <div className="home__info max-w-full lg:max-w-[60%] basis-full lg:basis-[60%] grow-0 shrink-0 px-4">
@@ -50,8 +53,8 @@ const Home = () => {
               ipsum dolor sit amet consectetur adipisicing elit. Similique,
               iste.
             </p>
-            <a href="#contact" className="btn btn-accent hire-me w-[9rem]">
-              Hire Me
+            <a href="#about" className="btn btn-accent hire-me w-[9rem]">
+              About Me
             </a>
           </div>
           <HomeIllustration />

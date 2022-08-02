@@ -2,7 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="contact section text-neutral min-h-screen">
+    <section
+      className="contact section text-neutral min-h-screen"
+      title="contact"
+    >
       <div className="container">
         <div className="row">
           <div className="basis-full grow-0 shrink-0 py-4 max-w-full mb-[60px]">
