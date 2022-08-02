@@ -6,9 +6,14 @@ import Contact from "./Contact";
 import NavToggle from "./NavToggle";
 
 const MainContent = () => {
+  const showAside = () => {
+    const aside = document.querySelector(".aside");
+    aside.classList.toggle("hidden");
+  };
+
   return (
     <main className="main main-content lg:pl-[280px]">
-      <NavToggle />
+      <NavToggle showAside={showAside} />
       <Home />
       <Portfolio />
       <About />

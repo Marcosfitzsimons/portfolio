@@ -33,23 +33,23 @@ const About = () => {
                 Languages & Tools I Use:
               </h4>
               <div className="about-skills-container flex flex-col items-start gap-8">
-                <ul className="about-skills-list flex gap-4 justify-evenly flex-wrap bg-secondary rounded-md p-4">
-                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/90 hover:text-neutral hover:border-neutral">
+                <ul className="about-skills-list flex gap-4 justify-evenly flex-wrap rounded-md p-4">
+                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/50 hover:text-neutral border-none">
                     Javascript
                   </li>
-                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/90 hover:text-neutral hover:border-neutral">
+                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/50 hover:text-neutral border-none">
                     React
                   </li>
-                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/90 hover:text-neutral hover:border-neutral">
+                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/50 hover:text-neutral border-none">
                     CSS
                   </li>
-                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/90 hover:text-neutral hover:border-neutral">
+                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/50 hover:text-neutral border-none">
                     HTML
                   </li>
-                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/90 hover:text-neutral hover:border-neutral">
+                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/50 hover:text-neutral border-none">
                     GitHub
                   </li>
-                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/90 hover:text-neutral hover:border-neutral">
+                  <li className="about-skills-item btn no-animation btn-sm hover:bg-accent/50 hover:text-neutral border-none">
                     TailwindCSS
                   </li>
                 </ul>

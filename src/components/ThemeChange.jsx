@@ -10,7 +10,6 @@ const ThemeChange = () => {
 
   const showThemeSwitcher = () => {
     const themeSwitcher = document.querySelector(".theme-switcher");
-    console.log(themeSwitcher);
     themeSwitcher.classList.toggle("active");
   };
 
@@ -22,8 +21,8 @@ const ThemeChange = () => {
       <div className="open-theme-switcher shadow-md shadow-neutral/30 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center">
         <FaPalette className="text-neutral/80" />
       </div>
-      <div className="select-none text-neutral/70 text-2xl lg:text-3xl font-secondary-font w-15 rounded-md rounded-tr-none rounded-br-none left-[-6rem] lg:left-[-7.5rem] top-12 z-40 bg-red absolute flex justify-center items-center">
-        <p className="animate-pulse">toggle theme</p>
+      <div className="type-wrap select-none text-neutral/70 text-2xl lg:text-3xl font-secondary-font w-15 rounded-md rounded-tr-none rounded-br-none left-[-6rem] lg:left-[-7.5rem] top-12 z-40 bg-red absolute flex justify-center items-center">
+        <p className="animate-pulse typed-cursor">toggle theme</p>
       </div>
       <ul className="flex flex-col w-full bg-secondary border-2 border-secondary/70 p-3">
         <li className="flex items-center gap-1">
