@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
 import { FaPalette } from "react-icons/fa";
+import "animate.css";
 
 const ThemeChange = () => {
   useEffect(() => {
@@ -16,13 +17,15 @@ const ThemeChange = () => {
   return (
     <div
       onClick={showThemeSwitcher}
-      className="theme-switcher w-[10rem] fixed right-[-9.5rem] top-10 rounded-lg shadow-md shadow-neutral/30 cursor-pointer transition-all"
+      className="animate__animated animate__zoomInRight theme-switcher w-[10rem] fixed right-[-9.5rem] top-10 rounded-lg shadow-md shadow-neutral/30 cursor-pointer transition-all"
     >
       <div className="open-theme-switcher shadow-md shadow-neutral/30 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center">
         <FaPalette className="text-neutral/80" />
       </div>
-      <div className="type-wrap select-none text-neutral/70 text-2xl lg:text-3xl font-secondary-font w-15 rounded-md rounded-tr-none rounded-br-none left-[-8.5rem] lg:left-[-10rem] top-[-0rem] z-40 bg-red absolute flex justify-center items-center">
-        <p className="animate-pulse typed-cursor">toggle theme</p>
+      <div className="type-wrap select-none text-neutral/60 text-2xl lg:text-3xl font-secondary-font w-15 rounded-md rounded-tr-none rounded-br-none left-[-8.5rem] lg:left-[-10rem] top-[0.2rem] z-40 bg-red absolute flex justify-center items-center">
+        <p className="typed-cursor animate__animated animate__pulse animate__delay-1s">
+          toggle theme
+        </p>
       </div>
       <ul className="flex flex-col w-full bg-secondary border-2 border-secondary/70 p-3">
         <li className="flex items-center gap-1">

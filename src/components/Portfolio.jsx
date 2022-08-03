@@ -2,6 +2,13 @@ import React from "react";
 import { RiGithubFill } from "react-icons/ri";
 
 const Portfolio = () => {
+  const projectActive = () => {
+    const overlay = document.querySelector(".overlay");
+    overlay.classList.toggle("hidden");
+    const portfolioLinks = document.querySelector(".portfolio-links-container");
+    portfolioLinks.classList.toggle("active");
+  };
+
   return (
     <section
       className="portfolio section text-neutral min-h-screen"
@@ -21,14 +28,25 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="row sm:grid sm:grid-cols-2 lg:gap-2 lg:grid-cols-3 xl:grid-cols-4 w-[full] lg:w-[85%]">
-          <article className="portfolio-item py-4 max-w-[280px] m-auto md:m-0">
+          <article
+            onClick={projectActive}
+            className="portfolio-item py-4 mb-6 lg:mb-6 max-w-[280px] m-auto md:m-0 relative"
+          >
             <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container">
+              <div className="portfolio-img-container relative">
                 <img
                   src="https://via.placeholder.com/250"
                   alt="#"
-                  className="w-full lg:max-h-[200px]"
+                  className="w-full lg:max-h-[200px] z-20"
                 />
+                <div className="hidden overlay absolute h-full w-full bg-primary/60 z-90 top-0 left-0 rounded-md border-none"></div>
+              </div>
+
+              <div className="portfolio-links-container bottom-[8.2rem] left-0 lg:bottom-[6rem] absolute hidden gap-2 justify-center items-center w-full">
+                <button className="btn">Live site</button>
+                <a href="#" className="btn">
+                  GitHub
+                </a>
               </div>
             </div>
           </article>

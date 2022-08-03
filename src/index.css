@@ -123,4 +123,10 @@
   .theme-switcher.active {
     right: 0;
   }
+  overlay.active {
+    display: block;
+  }
+  .portfolio-links-container.active {
+    display: flex;
+  }
 }
