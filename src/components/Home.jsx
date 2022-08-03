@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <section
-      className="home section text-neutral min-h-screen flex"
+      className="pt-4 home section text-neutral min-h-screen flex"
       title="home"
     >
       <div className="container">
@@ -40,7 +40,7 @@ const Home = () => {
                 Marcos Fitzsimons
               </span>
             </h1>
-            <h2 className="font-bold home__profession text-3xl lg:text-4xl my-4 mx-0">
+            <h2 className="font-bold home__profession text-2xl lg:text-4xl my-4 mx-0">
               I'm a{" "}
               <span
                 className="typing text-accent"
