@@ -8,12 +8,21 @@ import {
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Nav = () => {
-  // useState for the link navegation active.
+  // use useState for the link navegation active state.
+
+  const handleClose = () => {
+    const aside = document.querySelector(".aside");
+    const navToggle = document.querySelector(".nav-toggle");
+    aside.classList.toggle("hidden");
+    navToggle.classList.toggle("active");
+  };
+
   return (
     <nav className="">
       <ul className="nav-list list-none mb-4">
         <li className="nav-list__item mb-6 block">
           <Link
+            onClick={handleClose}
             to="home"
             smooth={true}
             offset={-70}
@@ -25,9 +34,10 @@ const Nav = () => {
         </li>
         <li className="nav-list__item mb-6 block ">
           <Link
+            onClick={handleClose}
             to="portfolio"
             smooth={true}
-            offset={-70}
+            offset={-50}
             duration={500}
             className="cursor-pointer nav-list__link portfolio-link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-accent/20"
           >
@@ -36,6 +46,7 @@ const Nav = () => {
         </li>
         <li className="nav-list__item mb-6 block ">
           <Link
+            onClick={handleClose}
             to="about"
             smooth={true}
             offset={-70}
@@ -47,6 +58,7 @@ const Nav = () => {
         </li>
         <li className="nav-list__item mb-6 block ">
           <Link
+            onClick={handleClose}
             to="contact"
             smooth={true}
             offset={-70}

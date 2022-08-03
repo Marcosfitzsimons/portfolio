@@ -1,4 +1,5 @@
 import React from "react";
+import { RiGithubFill } from "react-icons/ri";
 
 const Portfolio = () => {
   return (
@@ -108,6 +109,20 @@ const Portfolio = () => {
               </div>
             </div>
           </article>
+        </div>
+        <div className="row text-center py-4">
+          <p className="text-lg pb-5 text-base-100 flex flex-col items-center gap-2 lg:flex-row lg:items-center lg:gap-2">
+            If you like, you can see more of my personal projects in my github
+            account:
+            <a
+              href="https://github.com/Marcosfitzsimons"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              <RiGithubFill className="text-3xl hover:text-accent/70 text-accent cursor-pointer text-center" />
+            </a>
+          </p>
         </div>
       </div>
     </section>
