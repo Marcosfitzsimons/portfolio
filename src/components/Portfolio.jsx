@@ -1,24 +1,11 @@
 import React from "react";
 import { RiGithubFill } from "react-icons/ri";
-import { MdWeb } from "react-icons/md";
-import me from "../assets/me.jpg";
+import PortfolioItem from "./PortfolioItem";
+import projectIllustration from "../assets/project-illustration.png";
+import projectBookmark from "../assets/project-bookmark.png";
+import projectCrowdfound from "../assets/project-crowdfund.png";
 
 const Portfolio = () => {
-  const projectActive = () => {
-    // fix
-    const overlay = document.querySelector(".overlay");
-    overlay.classList.toggle("hidden");
-    const portfolioLinks = document.querySelector(".portfolio-links-container");
-    portfolioLinks.classList.toggle("active");
-  };
-
-  const clickProject = () => {
-    const projects = document.querySelectorAll(".portfolio-item");
-    projects.forEach((project) => {
-      project.addEventListener("click", projectActive);
-    });
-  };
-
   return (
     <section
       className="portfolio section text-neutral min-h-screen"
@@ -37,119 +24,47 @@ const Portfolio = () => {
             <h4 className="text-xl pb-5">My Last Projects:</h4>
           </div>
         </div>
-        <div className="row sm:grid sm:grid-cols-2 lg:gap-2 lg:grid-cols-3 xl:grid-cols-4 w-[full] lg:w-[85%]">
-          <article
-            onClick={clickProject}
-            className="portfolio-item py-4 mb-6 lg:mb-6 max-w-[280px] m-auto md:m-0 relative"
-          >
-            <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container relative">
-                <img
-                  src={me}
-                  alt="#"
-                  className="w-full lg:max-h-[200px] z-20"
-                />
-                <div className="hidden overlay absolute h-full w-full bg-primary/60 z-90 top-0 left-0 rounded-md border-none"></div>
-              </div>
-
-              <div className="portfolio-links-container bottom-[7rem] left-0 lg:bottom-[5rem] absolute hidden gap-2 justify-center items-center w-full">
-                <div className="portfolio-links-item p-2 bg-accent/5 shadow-sm shadow-white/40 rounded-md flex items-center justify-center">
-                  <a
-                    href="https://marcosfitzsimons-portfolio.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-center flex flex-col gap-2 items-center justify-between text-neutral w-[5.3rem] h-[4.3rem] pt-2"
-                  >
-                    Live site: <MdWeb className="text-accent/80 text-2xl" />
-                  </a>
-                </div>
-                <div className="portfolio-links-item p-2 bg-accent/5 shadow-sm shadow-white/40 rounded-md flex items-center justify-center">
-                  <a
-                    href="https://github.com/Marcosfitzsimons"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-center flex flex-col items-center leading-4 justify-between text-neutral w-[5.3rem] h-[4.3rem]"
-                  >
-                    Github repository:{" "}
-                    <RiGithubFill className="text-accent/80 text-2xl" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article className="portfolio-item py-4 max-w-[280px] m-auto md:m-0">
-            <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container">
-                <img src={me} alt="#" className="w-full lg:max-h-[200px]" />
-              </div>
-            </div>
-          </article>
-          <article className="portfolio-item py-4 max-w-[280px] m-auto md:m-0">
-            <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container">
-                <img
-                  src="https://via.placeholder.com/250"
-                  alt="#"
-                  className="w-full lg:max-h-[200px]"
-                />
-              </div>
-            </div>
-          </article>
-          <article className="portfolio-item py-4 max-w-[280px] m-auto md:m-0">
-            <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container">
-                <img
-                  src="https://via.placeholder.com/250"
-                  alt="#"
-                  className="w-full lg:max-h-[200px]"
-                />
-              </div>
-            </div>
-          </article>
-          <article className="portfolio-item py-4 max-w-[280px] m-auto md:m-0">
-            <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container">
-                <img
-                  src="https://via.placeholder.com/250"
-                  alt="#"
-                  className="w-full lg:max-h-[200px]"
-                />
-              </div>
-            </div>
-          </article>
-          <article className="portfolio-item py-4 max-w-[280px] m-auto md:m-0">
-            <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container">
-                <img
-                  src="https://via.placeholder.com/250"
-                  alt="#"
-                  className="w-full lg:max-h-[200px]"
-                />
-              </div>
-            </div>
-          </article>
-          <article className="portfolio-item py-4 max-w-[280px] m-auto md:m-0">
-            <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container">
-                <img
-                  src="https://via.placeholder.com/250"
-                  alt="#"
-                  className="w-full lg:max-h-[200px]"
-                />
-              </div>
-            </div>
-          </article>
-          <article className="portfolio-item py-4 max-w-[280px] m-auto md:m-0">
-            <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-              <div className="portfolio-img-container">
-                <img
-                  src="https://via.placeholder.com/250"
-                  alt="#"
-                  className="w-full lg:max-h-[200px]"
-                />
-              </div>
-            </div>
-          </article>
+        <div className="row sm:grid sm:grid-cols-2 lg:gap-5 lg:grid-cols-3 xl:grid-cols-4 w-full lg:w-[90%]">
+          <PortfolioItem
+            projectImage={projectIllustration}
+            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+          />
+          <PortfolioItem
+            projectImage={projectBookmark}
+            liveSiteUrl="https://bookmark-react-app.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/bookmark-react-app"
+          />
+          <PortfolioItem
+            projectImage={projectCrowdfound}
+            liveSiteUrl="https://crowdfunding-product-page-ivory.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/crowdfunding-product-page"
+          />
+          <PortfolioItem
+            projectImage={projectIllustration}
+            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+          />
+          <PortfolioItem
+            projectImage={projectIllustration}
+            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+          />
+          <PortfolioItem
+            projectImage={projectIllustration}
+            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+          />
+          <PortfolioItem
+            projectImage={projectIllustration}
+            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+          />
+          <PortfolioItem
+            projectImage={projectIllustration}
+            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+          />
         </div>
         <div className="row text-center py-4">
           <p className="text-lg pb-5 text-base-100 flex flex-col items-center gap-2 lg:flex-row lg:items-center lg:gap-2">
