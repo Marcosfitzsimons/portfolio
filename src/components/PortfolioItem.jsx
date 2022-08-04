@@ -26,7 +26,7 @@ const PortfolioItem = ({ projectImage, liveSiteUrl, repositoryUrl }) => {
       onClick={clickProject}
       className="portfolio-item py-4 mb-6 lg:mb-6 max-w-[290px] m-auto md:m-0 relative"
     >
-      <div className="portfolio-item-inner border-[4px] border-accent/40 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
+      <div className="portfolio-item-inner border-[4px] border-accent/60 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
         <div className="portfolio-img-container relative">
           <img
             src={projectImage}
@@ -61,7 +61,7 @@ const PortfolioItem = ({ projectImage, liveSiteUrl, repositoryUrl }) => {
           </div>
         </div>
       </div>
-      <div className="tools-container flex items-center text-neutral bg-secondary absolute top-0 right-[-1rem] text-xl rounded-full p-[.5rem] z-90 border border-accent/30">
+      <div className="transition-colors tools-container flex items-center text-neutral bg-secondary absolute top-0 right-[-1rem] text-xl rounded-full p-[.5rem] z-90 border border-accent/60 hover:border-accent/40">
         <RiHtml5Fill />
         <IoLogoCss3 />
         <SiTailwindcss />
