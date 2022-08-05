@@ -11,7 +11,7 @@ const Contact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_ju1uvdh", "template_mkotu2d", toSend, "User ID")
+    send("service_ju1uvdh", "template_mkotu2d", toSend, "cPxtXtNu7QsBqHWX2")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
       })
