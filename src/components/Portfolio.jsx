@@ -29,47 +29,55 @@ const Portfolio = () => {
             <h4 className="text-xl pb-5">My Last Projects:</h4>
           </div>
         </div>
-        <div className="row sm:grid sm:grid-cols-2 lg:gap-5 xl:grid-cols-3 2xl:grid-cols-4 w-full lg:w-[90%]">
+        <div className="row sm:grid sm:grid-cols-2 lg:gap-5 xl:grid-cols-3 2xl:grid-cols-4 w-full">
           <PortfolioItem
             projectImage={projectAdvice}
             liveSiteUrl="https://advice-generator-app-eight.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/advice-generator-app"
+            projectTitle="Advice Generator App"
           />
           <PortfolioItem
             projectImage={projectDashboard}
             liveSiteUrl="https://social-media-dashboard-w-theme-switcher.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher"
+            projectTitle="Social Media Dashboard"
           />
           <PortfolioItem
             projectImage={projectCalculator}
             liveSiteUrl="https://calculator-app-w-react.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/calculator-app-w-react"
+            projectTitle="Calculator React App"
           />
           <PortfolioItem
             projectImage={projectBookmark}
             liveSiteUrl="https://bookmark-react-app.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/bookmark-react-app"
+            projectTitle="Bookmark React App"
           />
           <PortfolioItem
             projectImage={projectCrowdfound}
             liveSiteUrl="https://crowdfunding-product-page-ivory.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/crowdfunding-product-page"
+            projectTitle="Crowdfund Product Page"
           />
           <PortfolioItem
             projectImage={projectEasybank}
             liveSiteUrl="https://easybank-landing-page-alpha-seven.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/easybank-landing-page"
+            projectTitle="Easybank Landing Page"
           />
 
           <PortfolioItem
             projectImage={projectUrlShortening}
             liveSiteUrl="https://url-shortening-w-api.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/url-shortening-w-api"
+            projectTitle="Shortly Url Shortening API"
           />
           <PortfolioItem
             projectImage={projectIllustration}
             liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+            projectTitle="Chat App Css Illustartion"
           />
         </div>
         <div className="row text-center py-4">

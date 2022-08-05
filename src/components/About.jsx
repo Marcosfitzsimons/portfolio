@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
+// Linkedin - Let's connect, my chat is open if you wanna talk. ?
+// Cv - Learn a bit more about me and my experience. ?
+
 const About = () => {
   return (
     <section

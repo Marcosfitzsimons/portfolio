@@ -1,6 +1,28 @@
 import React from "react";
+import { useState } from "react";
+import { send } from "emailjs-com";
 
 const Contact = () => {
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    message: "",
+    reply_to: "",
+  });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send("service_ju1uvdh", "template_mkotu2d", toSend, "User ID")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
   return (
     <section
       className="contact section text-neutral min-h-screen"
@@ -21,32 +43,29 @@ const Contact = () => {
           I'm very responsive to messages
         </h5>
         <div className="row w-full">
-          <div className="contact-form py-4 flex flex-col items-center w-full text-gray-700 font-medium lg:w-[80%] lg:m-auto">
+          <form
+            onSubmit={onSubmit}
+            className="contact-form py-4 flex flex-col items-center w-full text-gray-700 font-medium lg:w-[80%] lg:m-auto"
+          >
             <div className="row w-full lg:flex lg:justify-between lg:gap-2">
               <div className="form-item flex justify-center py-4 lg:basis-[50%]">
                 <input
                   type="text"
-                  id="name"
+                  name="from_name"
                   placeholder="Name"
+                  value={toSend.from_name}
+                  onChange={handleChange}
                   className="form-control input input-bordered input-accent w-full"
                 />
               </div>
               <div className="form-item flex justify-center py-4 lg:basis-[50%]">
                 <input
-                  type="email"
-                  className="form-control input input-bordered input-accent w-full"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
-            </div>
-            <div className="row w-full">
-              <div className="form-item col-12 py-4 flex justify-center">
-                <input
                   type="text"
+                  name="reply_to"
+                  value={toSend.reply_to}
+                  onChange={handleChange}
                   className="form-control input input-bordered input-accent w-full"
-                  id="subject"
-                  placeholder="Subject"
+                  placeholder="Email"
                 />
               </div>
             </div>
@@ -55,7 +74,8 @@ const Contact = () => {
                 <textarea
                   name="message"
                   className="form-control input input-bordered input-accent w-full h-20"
-                  id=""
+                  value={toSend.message}
+                  onChange={handleChange}
                   placeholder="Message"
                 ></textarea>
               </div>
@@ -70,7 +90,7 @@ const Contact = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>

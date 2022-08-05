@@ -122,5 +122,6 @@
   }
   .theme-switcher.active {
     right: 0;
+    z-index: 90;
   }
 }
