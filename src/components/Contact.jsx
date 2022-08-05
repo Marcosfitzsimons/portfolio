@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { send } from "emailjs-com";
+import { BsCheckAll } from "react-icons/bs";
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -23,6 +24,14 @@ const Contact = () => {
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
+
+  const formHidden = () => {
+    const form = document.querySelector(".form-container");
+    form.classList.add("hidden");
+    const alertSuccess = document.querySelector(".alert-success-container");
+    alertSuccess.classList.remove("hidden");
+  };
+
   return (
     <section
       className="contact section text-neutral min-h-screen"
@@ -42,7 +51,7 @@ const Contact = () => {
         <h5 className="contact-subtitle py-4 text-center text-lg">
           I'm very responsive to messages
         </h5>
-        <div className="row w-full">
+        <div className="form-container row w-full">
           <form
             onSubmit={onSubmit}
             className="contact-form py-4 flex flex-col items-center w-full text-gray-700 font-medium lg:w-[80%] lg:m-auto"
@@ -80,17 +89,26 @@ const Contact = () => {
                 ></textarea>
               </div>
             </div>
-            <div className="row w-full">
+            <div className="row w-full btn-submit-container">
               <div className="form-item col-12 py-4 w-full flex justify-center">
                 <button
                   type="submit"
                   className="btn btn-accent w-full sm:w-auto"
+                  onClick={formHidden}
                 >
                   Send Message
                 </button>
               </div>
             </div>
           </form>
+        </div>
+        <div className="alert-success-container alert-success mt-[2rem] max-w-[550px] mx-auto alert shadow-lg bg-accent text-neutral hidden">
+          <div className="flex flex-col justify-center sm:flex-row text-center">
+            <BsCheckAll className="text-3xl" />
+            <span>
+              Your message has been sent, thank you for contacting me!
+            </span>
+          </div>
         </div>
       </div>
     </section>
