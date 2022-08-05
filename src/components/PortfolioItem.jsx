@@ -10,8 +10,6 @@ import { SiTailwindcss } from "react-icons/si";
 const PortfolioItem = ({ projectImage, liveSiteUrl, repositoryUrl }) => {
   const projectActive = () => {
     // fix
-    const overlay = document.querySelector(".overlay");
-    overlay.classList.toggle("hidden");
     const portfolioLinks = document.querySelector(".portfolio-links-container");
     portfolioLinks.classList.toggle("active");
   };
@@ -24,39 +22,37 @@ const PortfolioItem = ({ projectImage, liveSiteUrl, repositoryUrl }) => {
   return (
     <article
       onClick={clickProject}
-      className="portfolio-item py-4 mb-6 lg:mb-6 max-w-[290px] m-auto md:m-0 relative"
+      className="portfolio-item py-4 mb-6 lg:mb-8 max-w-[290px] m-auto relative"
     >
-      <div className="portfolio-item-inner border-[4px] border-accent/60 rounded-xl overflow-hidden cursor-pointer shadow-xl shadow-white/10">
-        <div className="portfolio-img-container relative">
+      <div className="portfolio-item-inner border-[4px] border-accent/60 rounded-xl overflow-hidden shadow-xl shadow-white/10">
+        <div className="portfolio-img-container">
           <img
             src={projectImage}
             alt="#"
-            className="w-full max-h-[200px] z-20 opacity-95 rounded-lg"
+            className="w-full max-h-[200px] z-20 opacity-70 rounded-lg"
           />
-          <div className="hidden overlay absolute h-full w-full bg-primary/80 z-90 top-0 left-0 rounded-lg border-none"></div>
         </div>
 
-        <div className="portfolio-links-container bottom-[5rem] left-0 lg:bottom-[3rem] xl:bottom-[4.5rem] absolute z-30 hidden gap-2 justify-center items-center w-full">
-          <div className="animate__animated animate__fadeIn portfolio-links-item p-2 bg-accent/20 shadow-md shadow-white/30 rounded-md flex items-center justify-center border border-neutral/70">
+        <div className="portfolio-links-container flex bottom-[-1.5rem] left-0 absolute z-[9] gap-2 justify-center items-center w-full">
+          <div className="hover:bg-accent/30 hover:border hover:border-neutral animate__animated animate__fadeIn portfolio-links-item p-2 bg-accent/10 shadow-md shadow-white/30 rounded-md flex items-center justify-center border border-accent">
             <a
               href={liveSiteUrl}
               target="_blank"
               rel="noreferrer"
-              className="select-none font-medium text-center flex flex-col gap-2 items-center justify-between text-base-100 w-[5.3rem] h-[4.4rem] lg:w-[4.4rem] lg:h-[4.4rem] pt-2"
+              className=" select-none font-medium text-center flex flex-col gap-2 items-center justify-between text-neutral w-[5.3rem] h-[4.4rem] lg:w-[4.4rem] lg:h-[4.4rem] pt-2"
             >
-              Live site{" "}
-              <MdWeb className="text-accent/90 text-3xl border border-white/70 rounded-md pl-[.1rem]" />
+              Live site <MdWeb className="text-neutral text-3xl" />
             </a>
           </div>
-          <div className="animate__animated animate__fadeIn portfolio-links-item p-2 bg-accent/20 shadow-md shadow-white/30 rounded-md flex items-center justify-center border border-neutral/70">
+          <div className="hover:bg-accent/30 hover:border hover:border-neutral animate__animated animate__fadeIn portfolio-links-item p-2 bg-accent/10 shadow-md shadow-white/30 rounded-md flex items-center justify-center border border-accent/70">
             <a
               href={repositoryUrl}
               target="_blank"
               rel="noreferrer"
-              className="select-none font-medium text-center flex flex-col items-center leading-4 justify-between text-base-100 w-[5.3rem] h-[4.3rem] lg:w-[4.4rem] lg:h-[4.4rem]"
+              className=" select-none font-medium text-center flex flex-col items-center leading-4 justify-between text-neutral w-[5.3rem] h-[4.3rem] lg:w-[4.4rem] lg:h-[4.4rem]"
             >
               Github repository{" "}
-              <RiGithubFill className="text-accent/90 text-3xl border border-white/70 rounded-md px-[.1rem]" />
+              <RiGithubFill className="text-neutral text-3xl" />
             </a>
           </div>
         </div>
