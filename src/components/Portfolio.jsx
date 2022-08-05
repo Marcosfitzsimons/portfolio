@@ -3,7 +3,12 @@ import { RiGithubFill } from "react-icons/ri";
 import PortfolioItem from "./PortfolioItem";
 import projectIllustration from "../assets/project-illustration.png";
 import projectBookmark from "../assets/project-bookmark.png";
-import projectCrowdfound from "../assets/project-crowdfund.png";
+import projectCrowdfound from "../assets/project-crowdfunding.png";
+import projectAdvice from "../assets/project-advice.png";
+import projectDashboard from "../assets/project-dashboard.png";
+import projectEasybank from "../assets/project-easybank.png";
+import projectCalculator from "../assets/project-calculator.png";
+import projectUrlShortening from "../assets/project-url-shortening.png";
 
 const Portfolio = () => {
   return (
@@ -24,11 +29,21 @@ const Portfolio = () => {
             <h4 className="text-xl pb-5">My Last Projects:</h4>
           </div>
         </div>
-        <div className="row sm:grid sm:grid-cols-2 lg:gap-5 lg:grid-cols-3 xl:grid-cols-4 w-full lg:w-[90%]">
+        <div className="row sm:grid sm:grid-cols-2 lg:gap-5 xl:grid-cols-3 2xl:grid-cols-4 w-full lg:w-[90%]">
           <PortfolioItem
-            projectImage={projectIllustration}
-            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+            projectImage={projectAdvice}
+            liveSiteUrl="https://advice-generator-app-eight.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/advice-generator-app"
+          />
+          <PortfolioItem
+            projectImage={projectDashboard}
+            liveSiteUrl="https://social-media-dashboard-w-theme-switcher.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher"
+          />
+          <PortfolioItem
+            projectImage={projectCalculator}
+            liveSiteUrl="https://calculator-app-w-react.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/calculator-app-w-react"
           />
           <PortfolioItem
             projectImage={projectBookmark}
@@ -41,24 +56,15 @@ const Portfolio = () => {
             repositoryUrl="https://github.com/Marcosfitzsimons/crowdfunding-product-page"
           />
           <PortfolioItem
-            projectImage={projectIllustration}
-            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+            projectImage={projectEasybank}
+            liveSiteUrl="https://easybank-landing-page-alpha-seven.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/easybank-landing-page"
           />
+
           <PortfolioItem
-            projectImage={projectIllustration}
-            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
-          />
-          <PortfolioItem
-            projectImage={projectIllustration}
-            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
-          />
-          <PortfolioItem
-            projectImage={projectIllustration}
-            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
+            projectImage={projectUrlShortening}
+            liveSiteUrl="https://url-shortening-w-api.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/url-shortening-w-api"
           />
           <PortfolioItem
             projectImage={projectIllustration}

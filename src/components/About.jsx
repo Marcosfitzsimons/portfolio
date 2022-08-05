@@ -37,23 +37,23 @@ const About = () => {
                 Languages & Tools I Use:
               </h4>
               <div className="about-skills-container flex flex-col items-start gap-8">
-                <ul className="about-skills-list flex gap-5 flex-wrap rounded-md p-4 pl-0 w-[90%]">
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border hover:border-accent/90 bg-transparent btn-sm hover:bg-accent/60">
+                <ul className="about-skills-list flex gap-2 flex-wrap rounded-md p-4 pl-0 w-[90%]">
+                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
                     Javascript
                   </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border hover:border-accent/90 bg-transparent btn-sm hover:bg-accent/60">
+                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
                     React
                   </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border hover:border-accent/90 bg-transparent btn-sm hover:bg-accent/60">
+                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
                     CSS
                   </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border hover:border-accent/90 bg-transparent btn-sm hover:bg-accent/60">
+                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
                     HTML
                   </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border hover:border-accent/90 bg-transparent btn-sm hover:bg-accent/60">
+                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
                     GitHub
                   </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border hover:border-accent/90 bg-transparent btn-sm hover:bg-accent/60">
+                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
                     TailwindCSS
                   </li>
                 </ul>

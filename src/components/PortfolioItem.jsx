@@ -22,19 +22,19 @@ const PortfolioItem = ({ projectImage, liveSiteUrl, repositoryUrl }) => {
   return (
     <article
       onClick={clickProject}
-      className="portfolio-item py-4 mb-[4rem] max-w-[290px] m-auto relative"
+      className="portfolio-item py-4 mb-[4rem] max-w-[310px] m-auto relative"
     >
       <div className="portfolio-item-inner border-[4px] border-accent/60 rounded-xl overflow-hidden">
         <div className="portfolio-img-container">
           <img
             src={projectImage}
             alt="#"
-            className="w-full max-h-[200px] z-20 opacity-70 rounded-lg"
+            className="w-full max-h-[200px] z-20 opacity-80 rounded-lg"
           />
         </div>
 
         <div className="portfolio-links-container flex bottom-[-2.2rem] left-0 absolute z-[9] gap-2 justify-center items-center w-full">
-          <div className="cursor-pointer hover:bg-accent/20 hover:border hover:border-accent/70 hover:border-t-transparent animate__animated animate__fadeIn portfolio-links-item p-2 bg-accent/10 shadow-md shadow-white/30 rounded-md flex items-center justify-center border border-accent border-t-transparent rounded-t-none">
+          <div className="transition-colors cursor-pointer hover:border hover:border-accent/70 hover:border-t-transparent portfolio-links-item p-2 bg-accent/20 shadow-md shadow-white/30 rounded-md flex items-center justify-center border border-accent border-t-transparent rounded-t-none">
             <a
               href={liveSiteUrl}
               target="_blank"
@@ -44,7 +44,7 @@ const PortfolioItem = ({ projectImage, liveSiteUrl, repositoryUrl }) => {
               Live site <MdWeb className="text-neutral text-xl" />
             </a>
           </div>
-          <div className="cursor-pointer hover:bg-accent/20 hover:border hover:border-accent/70 hover:border-t-transparent animate__animated animate__fadeIn portfolio-links-item p-2 bg-accent/10 shadow-md shadow-white/30 rounded-md flex items-center justify-center border border-accent border-t-transparent rounded-t-none">
+          <div className="transition-colors cursor-pointer hover:border hover:border-accent/70 hover:border-t-transparent portfolio-links-item p-2 bg-accent/20 shadow-md shadow-white/30 rounded-md flex items-center justify-center border border-accent border-t-transparent rounded-t-none">
             <a
               href={repositoryUrl}
               target="_blank"

@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import me from "../assets/me.jpg";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Aside = () => {
