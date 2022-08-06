@@ -29,7 +29,7 @@ const Portfolio = () => {
             <h4 className="text-xl pb-5">My Last Projects:</h4>
           </div>
         </div>
-        <div className="row sm:grid sm:grid-cols-2 lg:gap-5 xl:grid-cols-3 2xl:grid-cols-4 w-full">
+        <div className="row sm:grid sm:grid-cols-2 sm:w-full lg:gap-5 xl:grid-cols-3 2xl:grid-cols-4 w-[90%] mx-auto">
           <PortfolioItem
             projectImage={projectAdvice}
             liveSiteUrl="https://advice-generator-app-eight.vercel.app/"

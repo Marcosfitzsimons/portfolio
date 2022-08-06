@@ -17,7 +17,7 @@ const ThemeChange = () => {
   return (
     <div
       onClick={showThemeSwitcher}
-      className="animate__animated animate__zoomInRight theme-switcher w-[10rem] fixed right-[-9.5rem] top-10 rounded-lg shadow-md shadow-neutral/30 cursor-pointer transition-all z-90"
+      className="animate__animated animate__zoomInRight theme-switcher w-[10rem] fixed right-[-9.5rem] top-8 rounded-lg shadow-md shadow-neutral/20 cursor-pointer transition-all z-90"
     >
       <div className="open-theme-switcher shadow-md shadow-neutral/30 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center">
         <FaPalette className="text-neutral/80" />

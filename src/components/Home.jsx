@@ -57,7 +57,7 @@ const Home = () => {
             <Link
               to="about"
               smooth={true}
-              offset={-70}
+              offset={-20}
               duration={500}
               className="btn btn-accent hire-me w-[9rem]"
             >

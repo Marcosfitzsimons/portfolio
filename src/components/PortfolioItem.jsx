@@ -1,6 +1,5 @@
 import React from "react";
-import { MdWeb } from "react-icons/md";
-import { RiGithubFill, RiHtml5Fill } from "react-icons/ri";
+import { RiHtml5Fill } from "react-icons/ri";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandJavascript } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
@@ -47,9 +46,9 @@ const PortfolioItem = ({
               href={liveSiteUrl}
               target="_blank"
               rel="noreferrer"
-              className="select-none font-medium text-center text-sm flex items-center justify-center gap-1 text-neutral w-[5.9rem] h-[2rem]"
+              className="select-none font-medium text-center text-sm flex items-center justify-center text-neutral w-[5.9rem] h-[2rem]"
             >
-              Live site <MdWeb className="text-neutral text-xl" />
+              Live server
             </a>
           </div>
           <div className="transition-colors cursor-pointer hover:border hover:border-accent/50 hover:border-t-transparent portfolio-links-item p-2 bg-accent/10 shadow-md shadow-neutral/20 rounded-md flex items-center justify-center border border-t-transparent border-accent/80 rounded-t-none">
@@ -57,10 +56,9 @@ const PortfolioItem = ({
               href={repositoryUrl}
               target="_blank"
               rel="noreferrer"
-              className="select-none font-medium text-center text-sm flex items-center justify-around leading-4 text-neutral w-[5.9rem] h-[2rem]"
+              className="select-none font-medium text-center text-sm flex items-center justify-center leading-4 text-neutral w-[5.9rem] h-[2rem]"
             >
-              Github repository{" "}
-              <RiGithubFill className="text-neutral text-4xl" />
+              Github repository
             </a>
           </div>
         </div>

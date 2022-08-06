@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { send } from "emailjs-com";
 import { BsCheckAll } from "react-icons/bs";
+import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
+import { MdLanguage } from "react-icons/md";
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -102,12 +104,28 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="alert-success-container alert-success mt-[2rem] max-w-[550px] mx-auto alert shadow-lg bg-accent text-neutral hidden">
+        <div className="py-4 alert-success-container alert-success mt-[2rem] max-w-[550px] mx-auto alert shadow-lg bg-accent text-neutral hidden">
           <div className="flex flex-col justify-center sm:flex-row text-center">
             <BsCheckAll className="text-3xl" />
             <span>
               Your message has been sent, thank you for contacting me!
             </span>
+          </div>
+        </div>
+        <div className="py-4 pt-8 contact-info w-full">
+          <div className="contact-info-container lg:flex lg:gap-6 lg:justify-center w-full lg:w-[80%] lg:mx-auto">
+            <div className="contact-info__location flex py-2 items-center gap-2">
+              <HiOutlineLocationMarker className="text-2xl text-accent/70 hover:text-accent/50" />
+              <p className="">Argentina, Buenos Aires</p>
+            </div>
+            <div className="contact-info__email flex py-2 items-center gap-2">
+              <HiOutlineMail className="text-2xl text-accent/70 hover:text-accent/50" />
+              <p className="">marcosfitzsimons@gmail.com</p>
+            </div>
+            <div className="contact-info__languages flex py-2 items-center gap-2">
+              <MdLanguage className="text-2xl text-accent/70 hover:text-accent/50" />
+              <p className="">Spanish & English</p>
+            </div>
           </div>
         </div>
       </div>
