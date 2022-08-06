@@ -1,5 +1,5 @@
 import React from "react";
-import { RiHtml5Fill } from "react-icons/ri";
+import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandJavascript } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
@@ -64,7 +64,7 @@ const PortfolioItem = ({
         </div>
       </div>
       <div className="tools-container transition-colors flex items-center text-neutral bg-secondary/90 shadow-sm shadow-neutral/40 absolute top-0 right-[-2.3rem] text-xl rounded-full p-[.5rem] z-90 border border-accent/60 hover:border-accent/50">
-        <RiHtml5Fill />
+        <TiHtml5 />
         <IoLogoCss3 />
         <SiTailwindcss />
         <TbBrandJavascript />

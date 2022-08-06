@@ -56,7 +56,7 @@ const Contact = () => {
         <div className="form-container row w-full">
           <form
             onSubmit={onSubmit}
-            className="contact-form py-4 flex flex-col items-center w-full text-gray-700 font-medium lg:w-[80%] lg:m-auto"
+            className="contact-form py-4 flex flex-col items-center w-full text-gray-700 font-medium lg:w-[80%] xl:w-[65%] lg:m-auto"
           >
             <div className="row w-full lg:flex lg:justify-between lg:gap-2">
               <div className="form-item flex justify-center py-4 lg:basis-[50%]">
@@ -112,18 +112,18 @@ const Contact = () => {
             </span>
           </div>
         </div>
-        <div className="py-4 pt-8 contact-info w-full">
-          <div className="contact-info-container lg:flex lg:gap-6 lg:justify-center w-full lg:w-[80%] lg:mx-auto">
+        <div className="py-4 pt-8 contact-info w-full text-base-100">
+          <div className="contact-info-container lg:flex lg:gap-6 lg:justify-center w-full lg:mx-auto">
             <div className="contact-info__location flex py-2 items-center gap-2">
-              <HiOutlineLocationMarker className="text-2xl text-accent/70 hover:text-accent/50" />
+              <HiOutlineLocationMarker className="text-2xl text-accent/70 hover:text-accent/50 transition-colors" />
               <p className="">Argentina, Buenos Aires</p>
             </div>
             <div className="contact-info__email flex py-2 items-center gap-2">
-              <HiOutlineMail className="text-2xl text-accent/70 hover:text-accent/50" />
+              <HiOutlineMail className="text-2xl text-accent/70 hover:text-accent/50 transition-colors" />
               <p className="">marcosfitzsimons@gmail.com</p>
             </div>
             <div className="contact-info__languages flex py-2 items-center gap-2">
-              <MdLanguage className="text-2xl text-accent/70 hover:text-accent/50" />
+              <MdLanguage className="text-2xl text-accent/70 hover:text-accent/50 transition-colors" />
               <p className="">Spanish & English</p>
             </div>
           </div>
