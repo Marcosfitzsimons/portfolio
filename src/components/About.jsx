@@ -22,24 +22,26 @@ const About = () => {
           <div className="about-content basis-full grow-0 shrink-0 max-w-full py-4">
             <div className="row pb-4">
               <div className="about-text basis-full grow-0 shrink-0 max-w-full py-4">
-                <h4 className="text-2xl mb-4 font-bold">
+                <h4 className="text-2xl font-bold lg:text-3xl my-5">
                   I'm Marcos Fitzsimons,{" "}
-                  <span className="text-accent">Frontend Developer</span>
+                  <span className="text-accent">Front-End Developer</span>
                 </h4>
-                <p className=" text-base leading-6 text-base-100">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                  modi impedit nostrum aliquam. Deserunt maxime culpa, magni
-                  ullam voluptatem aspernatur amet inventore commodi dignissimos
-                  nam quaerat sint suscipit placeat porro! Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Doloremque, amet!
+                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[80%] my-5">
+                  I'm a self-taught student, currently focusing on studying the
+                  basics of Javascript & Front-end Development.
+                </p>
+                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[80%] my-5">
+                  At the beginning of 2021, due to a change of interests, I
+                  decided to leave my career as a nutritionist and start my way
+                  to become a front-end developer.
                 </p>
               </div>
             </div>
             <div className="row py-4">
-              <h4 className="about-skills-title py-4 text-xl text-accent">
+              <h4 className="about-skills-title my-4 text-xl text-accent">
                 Languages & Tools I Use:
               </h4>
-              <div className="about-skills-container flex flex-col items-start gap-8">
+              <div className="about-skills-container my-4 flex flex-col items-start gap-5">
                 <ul className="about-skills-list flex gap-2 flex-wrap rounded-md p-4 pl-0 w-[90%]">
                   <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
                     Javascript
@@ -60,7 +62,7 @@ const About = () => {
                     TailwindCSS
                   </li>
                 </ul>
-                <div className="about-buttons-container flex flex-col w-full sm:w-auto sm:flex-row gap-5">
+                <div className="about-buttons-container flex flex-col w-full sm:w-auto sm:flex-row gap-5 my-5">
                   <div className="indicator w-full sm:w-36 opacity-90">
                     <span className="indicator-item badge hidden sm:flex sm:left-2 select-none bg-transparent text-neutral z-10">
                       unavailable

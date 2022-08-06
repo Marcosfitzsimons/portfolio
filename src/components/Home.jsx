@@ -40,7 +40,7 @@ const Home = () => {
                 Marcos Fitzsimons
               </span>
             </h1>
-            <h2 className="font-bold home__profession text-2xl lg:text-4xl my-4 mx-0">
+            <h2 className="font-bold home__profession text-[1.3rem] lg:text-4xl my-5 mx-0">
               I'm a{" "}
               <span
                 className="typing text-accent"
@@ -48,11 +48,9 @@ const Home = () => {
                 ref={el}
               />
             </h2>
-            <p className="home__description mb-[70px] text-lg lg:text-xl text-base-100">
-              I'm a front-end developer who enjoys creating beautiful and
-              functional user experiences. Lorem ipsum dolor sit amet. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Similique,
-              iste.
+            <p className="home__description mb-[70px] text-lg lg:text-xl xl:w-[70%] text-base-100">
+              I'm a front-end developer who enjoys creating beautiful, friendly
+              and functional user experiences.
             </p>
             <Link
               to="about"
