@@ -9,6 +9,11 @@ import projectDashboard from "../assets/project-dashboard.png";
 import projectEasybank from "../assets/project-easybank.png";
 import projectCalculator from "../assets/project-calculator.png";
 import projectUrlShortening from "../assets/project-url-shortening.png";
+import { TiHtml5 } from "react-icons/ti";
+import { IoLogoCss3 } from "react-icons/io";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
+import { DiReact } from "react-icons/di";
 
 const Portfolio = () => {
   return (
@@ -31,53 +36,78 @@ const Portfolio = () => {
         </div>
         <div className="row sm:grid sm:grid-cols-2 sm:w-full lg:gap-5 xl:grid-cols-3 2xl:grid-cols-4 w-[90%] mx-auto">
           <PortfolioItem
-            projectImage={projectAdvice}
-            liveSiteUrl="https://advice-generator-app-eight.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/advice-generator-app"
-            projectTitle="Advice Generator App"
-          />
-          <PortfolioItem
-            projectImage={projectDashboard}
-            liveSiteUrl="https://social-media-dashboard-w-theme-switcher.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher"
-            projectTitle="Social Media Dashboard"
+            projectImage={projectBookmark}
+            liveSiteUrl="https://bookmark-react-app.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/bookmark-react-app"
+            projectTitle="Bookmark React App"
+            htmlIcon={<TiHtml5 />}
+            tailwindIcon={<SiTailwindcss />}
+            jsIcon={<TbBrandJavascript />}
+            reactIcon={<DiReact />}
           />
           <PortfolioItem
             projectImage={projectCalculator}
             liveSiteUrl="https://calculator-app-w-react.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/calculator-app-w-react"
             projectTitle="Calculator React App"
+            htmlIcon={<TiHtml5 />}
+            cssIcon={<IoLogoCss3 />}
+            jsIcon={<TbBrandJavascript />}
+            reactIcon={<DiReact />}
           />
           <PortfolioItem
-            projectImage={projectBookmark}
-            liveSiteUrl="https://bookmark-react-app.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/bookmark-react-app"
-            projectTitle="Bookmark React App"
+            projectImage={projectAdvice}
+            liveSiteUrl="https://advice-generator-app-eight.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/advice-generator-app"
+            projectTitle="Advice Generator App"
+            htmlIcon={<TiHtml5 />}
+            cssIcon={<IoLogoCss3 />}
+            jsIcon={<TbBrandJavascript />}
+          />
+          <PortfolioItem
+            projectImage={projectDashboard}
+            liveSiteUrl="https://social-media-dashboard-w-theme-switcher.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher"
+            projectTitle="Social Media Dashboard"
+            htmlIcon={<TiHtml5 />}
+            cssIcon={<IoLogoCss3 />}
+            jsIcon={<TbBrandJavascript />}
           />
           <PortfolioItem
             projectImage={projectCrowdfound}
             liveSiteUrl="https://crowdfunding-product-page-ivory.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/crowdfunding-product-page"
             projectTitle="Crowdfund Product Page"
-          />
-          <PortfolioItem
-            projectImage={projectEasybank}
-            liveSiteUrl="https://easybank-landing-page-alpha-seven.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/easybank-landing-page"
-            projectTitle="Easybank Landing Page"
-          />
-
-          <PortfolioItem
-            projectImage={projectUrlShortening}
-            liveSiteUrl="https://url-shortening-w-api.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/url-shortening-w-api"
-            projectTitle="Shortly Url Shortening API"
+            htmlIcon={<TiHtml5 />}
+            cssIcon={<IoLogoCss3 />}
+            jsIcon={<TbBrandJavascript />}
           />
           <PortfolioItem
             projectImage={projectIllustration}
             liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
             projectTitle="Chat App Css Illustartion"
+            htmlIcon={<TiHtml5 />}
+            tailwindIcon={<SiTailwindcss />}
+            jsIcon={<TbBrandJavascript />}
+          />
+          <PortfolioItem
+            projectImage={projectUrlShortening}
+            liveSiteUrl="https://url-shortening-w-api.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/url-shortening-w-api"
+            projectTitle="Shortly Url Shortening API"
+            htmlIcon={<TiHtml5 />}
+            cssIcon={<IoLogoCss3 />}
+            jsIcon={<TbBrandJavascript />}
+          />
+          <PortfolioItem
+            projectImage={projectEasybank}
+            liveSiteUrl="https://easybank-landing-page-alpha-seven.vercel.app/"
+            repositoryUrl="https://github.com/Marcosfitzsimons/easybank-landing-page"
+            projectTitle="Easybank Landing Page"
+            htmlIcon={<TiHtml5 />}
+            cssIcon={<IoLogoCss3 />}
+            jsIcon={<TbBrandJavascript />}
           />
         </div>
         <div className="row text-center py-4">

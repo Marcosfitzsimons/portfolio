@@ -26,11 +26,11 @@ const About = () => {
                   I'm Marcos Fitzsimons,{" "}
                   <span className="text-accent">Front-End Developer</span>
                 </h4>
-                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[80%] my-5">
+                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[70%] my-5">
                   I'm a self-taught student, currently focusing on studying the
                   basics of Javascript & Front-end Development.
                 </p>
-                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[80%] my-5">
+                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[60%] my-5">
                   At the beginning of 2021, due to a change of interests, I
                   decided to leave my career as a nutritionist and start my way
                   to become a front-end developer.
