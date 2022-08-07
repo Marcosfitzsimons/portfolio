@@ -19,7 +19,7 @@ const ThemeChange = () => {
       onClick={showThemeSwitcher}
       className="animate__animated animate__zoomInRight theme-switcher w-[10rem] fixed right-[-9.5rem] top-8 rounded-lg shadow-md shadow-neutral/20 cursor-pointer transition-all z-90"
     >
-      <div className="open-theme-switcher shadow-md shadow-neutral/30 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center">
+      <div className="open-theme-switcher shadow-md shadow-neutral/20 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center">
         <FaPalette className="text-neutral/80" />
       </div>
       <div className="type-wrap select-none cursor-default text-neutral/60 text-2xl lg:text-3xl font-secondary-font w-15 rounded-md rounded-tr-none rounded-br-none left-[-8.5rem] lg:left-[-10rem] top-[0.2rem] bg-red absolute flex justify-center items-center">
@@ -33,7 +33,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="default"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost text-neutral w-full relative right-8 z-30"
+            className="btn btn-ghost w-full relative right-8 z-30 text-[#147b74] hover:opacity-70"
           >
             default
           </button>
@@ -43,7 +43,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="red"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost text-neutral w-full relative right-12 z-30"
+            className="btn btn-ghost w-full relative right-12 z-30 text-[#c4032a] hover:opacity-70"
           >
             red
           </button>
@@ -53,7 +53,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="pink"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost text-neutral w-full relative right-[2.88rem] z-30"
+            className="btn btn-ghost w-full relative right-[2.88rem] z-30 text-[#df4996] hover:opacity-70"
           >
             pink
           </button>
@@ -63,7 +63,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="blue"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost text-neutral w-full relative right-[2.85rem] z-30"
+            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-[#207ecc] hover:opacity-70"
           >
             blue
           </button>
