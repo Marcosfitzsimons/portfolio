@@ -27,7 +27,7 @@ const PortfolioItem = ({
   return (
     <article
       onClick={clickProject}
-      className="portfolio-item py-4 mb-[4rem] max-w-[310px] md:w-[280px] m-auto relative"
+      className="portfolio-item py-4 mb-[4rem] max-w-[280px] relative"
     >
       <div className="portfolio-title-container hover:text-accent/60 absolute left-3 top-[-1.2rem] bg-accent/5 p-1 py-2 rounded-md rounded-b-none hover:border-accent/50 transition-colors select-none">
         <h5 className="portfolio-title text-sm">{projectTitle}</h5>

@@ -34,7 +34,7 @@ const Portfolio = () => {
             <h4 className="text-xl pb-5">My Last Projects:</h4>
           </div>
         </div>
-        <div className="row sm:grid sm:grid-cols-2 sm:w-full lg:gap-5 xl:grid-cols-3 2xl:grid-cols-4 w-[90%] mx-auto">
+        <div className="flex flex-col items-center row sm:grid sm:gap-6 sm:grid-cols-2 sm:w-full xl:grid-cols-3 2xl:grid-cols-4 2xl:gap-3">
           <PortfolioItem
             projectImage={projectBookmark}
             liveSiteUrl="https://bookmark-react-app.vercel.app/"
