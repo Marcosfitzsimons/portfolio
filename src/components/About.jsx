@@ -19,7 +19,7 @@ const About = () => {
           </div>
         </div>
         <div className="row">
-          <div className="about-content basis-full grow-0 shrink-0 max-w-full py-4">
+          <div className="about-content basis-full grow-0 shrink-0 max-w-full py-4 relative">
             <div className="row pb-4">
               <div className="about-text basis-full grow-0 shrink-0 max-w-full py-4">
                 <h4 className="text-2xl font-bold lg:text-3xl my-5">

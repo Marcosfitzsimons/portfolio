@@ -1,14 +1,14 @@
 import React from "react";
 import { RiGithubFill } from "react-icons/ri";
 import PortfolioItem from "./PortfolioItem";
-import projectIllustration from "../assets/project-illustration.png";
-import projectBookmark from "../assets/project-bookmark.png";
-import projectCrowdfound from "../assets/project-crowdfunding.png";
-import projectAdvice from "../assets/project-advice.png";
-import projectDashboard from "../assets/project-dashboard.png";
-import projectEasybank from "../assets/project-easybank.png";
-import projectCalculator from "../assets/project-calculator.png";
-import projectUrlShortening from "../assets/project-url-shortening.png";
+import projectIllustration from "../assets/project-illustration.webp";
+import projectBookmark from "../assets/project-bookmark.webp";
+import projectCrowdfound from "../assets/project-crowdfunding.webp";
+import projectAdvice from "../assets/project-advice.webp";
+import projectDashboard from "../assets/project-dashboard.webp";
+import projectEasybank from "../assets/project-easybank.webp";
+import projectCalculator from "../assets/project-calculator.webp";
+import projectUrlShortening from "../assets/project-url-shortening.webp";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -23,7 +23,7 @@ const Portfolio = () => {
     >
       <div className="container pb-10">
         <div className="row">
-          <div className="basis-full grow-0 shrink-0 py-4 max-w-full mb-[60px]">
+          <div className="portfolio__title basis-full grow-0 shrink-0 py-4 max-w-full mb-[60px]">
             <h3 className="text-4xl pb-2 font-bold relative before:content[''] before:h-[4px] before:w-[50px] before:bg-accent before:absolute before:top-[100%] before:left-0 after:content[''] after:h-[4px] after:w-[25px] after:bg-accent after:absolute after:top-[100%] after:left-0 after:mt-[8px]">
               Projects
             </h3>
