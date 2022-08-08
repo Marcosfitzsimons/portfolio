@@ -32,12 +32,12 @@ const PortfolioItem = ({
       <div className="portfolio-title-container hover:text-accent/60 absolute left-3 top-[-1.2rem] bg-accent/5 p-1 py-2 rounded-md rounded-b-none hover:border-accent/50 transition-colors select-none">
         <h5 className="portfolio-title text-sm">{projectTitle}</h5>
       </div>
-      <div className="portfolio-item-inner border-[4px] border-accent/60 rounded-xl overflow-hidden">
+      <div className="portfolio-item-inner border-[4px] border-accent/60 rounded-xl overflow-hidden hover:border-accent/90">
         <div className="portfolio-img-container">
           <img
             src={projectImage}
             alt="#"
-            className="w-full z-20 max-h-[200px]  opacity-80 rounded-lg"
+            className="w-full z-20 max-h-[200px] rounded-lg"
           />
         </div>
 

@@ -53,13 +53,16 @@ const About = () => {
                     CSS
                   </li>
                   <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
+                    TailwindCSS
+                  </li>
+                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
+                    Bootstrap
+                  </li>
+                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
                     HTML
                   </li>
                   <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    GitHub
-                  </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    TailwindCSS
+                    Github
                   </li>
                 </ul>
                 <div className="about-buttons-container flex flex-col w-full sm:w-auto sm:flex-row gap-5 my-5">

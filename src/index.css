@@ -7,20 +7,20 @@
 @layer base {
   :root {
     --accent: #147b74;
-    --homeImg: url("./assets/home-illustration-default.png");
+    --homeImg: url("./assets/developer-default.webp");
     /* or any other variables/style */
   }
   [data-theme="red"] {
     --accent: #c4032a;
-    --homeImg: url("./assets/home-illustration-red.png");
+    --homeImg: url("./assets/developer-red.webp");
   }
   [data-theme="pink"] {
     --accent: #df4996;
-    --homeImg: url("./assets/home-illustration-pink.png");
+    --homeImg: url("./assets/developer-pink.webp");
   }
   [data-theme="blue"] {
     --accent: #207ecc;
-    --homeImg: url("./assets/home-illustration-blue.png");
+    --homeImg: url("./assets/developer-blue.webp");
   }
   body {
     font-size: 16px;
@@ -65,7 +65,7 @@
 
   .home-illustration-bg {
     background-image: var(--homeImg);
-    background-position: left center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
   }

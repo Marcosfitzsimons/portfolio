@@ -48,7 +48,7 @@ const Home = () => {
                 ref={el}
               />
             </h2>
-            <p className="home__description mb-[70px] text-lg lg:text-xl xl:w-[70%] text-base-100">
+            <p className="home__description mb-[70px] text-lg lg:text-xl 2xl:w-[80%] text-base-100">
               I'm a front-end developer who enjoys creating beautiful, friendly
               and functional user experiences.
             </p>
