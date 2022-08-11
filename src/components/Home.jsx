@@ -2,6 +2,21 @@ import React from "react";
 import HomeIllustration from "./HomeIllustration";
 import Typed from "typed.js";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
+
+const homeVariants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 
 const Home = () => {
   const el = React.useRef(null);
@@ -27,9 +42,12 @@ const Home = () => {
   }, []);
 
   return (
-    <section
+    <motion.section
       className="pt-4 home section text-neutral min-h-screen flex"
       title="home"
+      variants={homeVariants}
+      initial="hidden"
+      animate="visible"
     >
       <div className="container">
         <div className="row flex flex-wrap -mx-4 relative">
@@ -65,7 +83,7 @@ const Home = () => {
           <HomeIllustration />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

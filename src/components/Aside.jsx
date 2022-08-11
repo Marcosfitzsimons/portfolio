@@ -1,12 +1,18 @@
 import React from "react";
 import Nav from "./Nav";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Aside = () => {
   return (
     <div className="aside w-72 bg-secondary text-neutral fixed left-0 top-0 h-full z-10 border-r-accent/20 border-r hidden lg:block shadow-lg shadow-white/20">
       <div className="h-full flex justify-center items-center">
-        <div className="logo absolute top-12 text-3xl capitalize">
+        <motion.div
+          className="logo absolute top-12 text-3xl capitalize"
+          drag
+          dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+          dragElastic={1}
+        >
           <Link
             to="home"
             smooth={true}
@@ -19,7 +25,7 @@ const Aside = () => {
             </span>
             arcos
           </Link>
-        </div>
+        </motion.div>
         <Nav />
       </div>
     </div>
