@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --accent: #147b74;
+    --accent: #115e59;
     --homeImg: url("./assets/developer-default.webp");
     /* or any other variables/style */
   }
@@ -18,10 +18,15 @@
     --accent: #df4996;
     --homeImg: url("./assets/developer-pink.webp");
   }
-  [data-theme="blue"] {
-    --accent: #207ecc;
-    --homeImg: url("./assets/developer-blue.webp");
+  [data-theme="cyan"] {
+    --accent: #0891b2;
+    --homeImg: url("./assets/developer-cyan.svg");
   }
+  [data-theme="yellow"] {
+    --accent: #eab308;
+    --homeImg: url("./assets/developer-gold1.svg");
+  }
+
   body {
     font-size: 16px;
     font-family: ;

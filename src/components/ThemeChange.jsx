@@ -35,7 +35,7 @@ const ThemeChange = () => {
             data-act-class="ACTIVECLASS"
             className="btn btn-ghost w-full relative right-8 z-30 text-[#147b74] hover:opacity-70"
           >
-            default
+            emerald
           </button>
         </li>
         <li className="flex items-center gap-1">
@@ -58,14 +58,24 @@ const ThemeChange = () => {
             pink
           </button>
         </li>
-        <li className="flex items-center gap-1">
-          <div className="badge badge-lg bg-[#207ecc] border-secondary z-20"></div>
+        <li className="flex items-center gap-[.4rem]">
+          <div className="badge badge-lg bg-[#0891B2] border-secondary z-20"></div>
           <button
-            data-set-theme="blue"
+            data-set-theme="cyan"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-[#207ecc] hover:opacity-70"
+            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-[#0891B2] hover:opacity-70"
           >
-            blue
+            cyan
+          </button>
+        </li>
+        <li className="flex items-center gap-[.4rem]">
+          <div className="badge badge-lg bg-[#EAB308] border-secondary z-20"></div>
+          <button
+            data-set-theme="yellow"
+            data-act-class="ACTIVECLASS"
+            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-[#EAB308] hover:opacity-70"
+          >
+            gold
           </button>
         </li>
       </ul>

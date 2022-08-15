@@ -34,10 +34,17 @@ module.exports = {
           "neutral": "#f8fffe", // veryLightGray
           "base-100": "#e5e0df", // lightGray
         },
-        blue: {
+        cyan: {
           "primary": "#151515", // veryDarkGray
           "secondary": "#222222", // darkGray
-          "accent": "#207ecc", // themeColor
+          "accent": "#0891B2", // themeColor
+          "neutral": "#f8fffe", // veryLightGray
+          "base-100": "#e5e0df", // lightGray df4996
+        },
+        yellow: {
+          "primary": "#151515", // veryDarkGray
+          "secondary": "#222222", // darkGray
+          "accent": "#eab308",
           "neutral": "#f8fffe", // veryLightGray
           "base-100": "#e5e0df", // lightGray df4996
         },

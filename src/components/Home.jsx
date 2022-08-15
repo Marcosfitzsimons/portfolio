@@ -7,14 +7,27 @@ import { motion } from "framer-motion";
 const homeVariants = {
   hidden: {
     opacity: 0,
-    scale: 0.5,
+    x: "-100vw",
   },
   visible: {
     opacity: 1,
-    scale: 1,
+    x: 0,
     transition: {
-      duration: 0.4,
+      type: "spring",
+      mass: 0.6,
+      damping: 12,
+      when: "beforeChildren",
+      staggerChildren: 0.4,
     },
+  },
+};
+
+const childVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
   },
 };
 
@@ -52,35 +65,46 @@ const Home = () => {
       <div className="container">
         <div className="row flex flex-wrap -mx-4 relative">
           <div className="home__info max-w-full lg:max-w-[60%] basis-full lg:basis-[60%] grow-0 shrink-0 px-4">
-            <h1 className="home__title text-3xl lg:text-4xl my-5 mx-0 font-bold">
+            <h1
+              className="home__title text-3xl lg:text-4xl my-5 mx-0 font-bold"
+              variants={childVariants}
+            >
               Hello, my name is{" "}
               <span className="font-secondary-font font-bold text-accent">
                 Marcos Fitzsimons
               </span>
             </h1>
-            <h2 className="font-bold home__profession text-[1.3rem] lg:text-4xl my-5 mx-0">
+            <motion.h2
+              className="font-bold home__profession text-[1.3rem] lg:text-4xl my-5 mx-0"
+              variants={childVariants}
+            >
               I'm a{" "}
               <span
                 className="typing text-accent"
                 style={{ whiteSpace: "pre" }}
                 ref={el}
               />
-            </h2>
-            <p className="home__description mb-[70px] text-lg lg:text-xl 2xl:w-[80%] text-base-100">
+            </motion.h2>
+            <motion.p
+              className="home__description mb-[70px] text-lg lg:text-xl 2xl:w-[80%] text-base-100"
+              variants={childVariants}
+            >
               I'm a front-end developer who enjoys creating beautiful, friendly
               and functional user experiences.
-            </p>
-            <Link
-              to="about"
-              smooth={true}
-              offset={-20}
-              duration={500}
-              className="btn btn-accent hire-me w-[9rem]"
-            >
-              About Me
-            </Link>
+            </motion.p>
+            <motion.div className="" variants={childVariants}>
+              <Link
+                to="about"
+                smooth={true}
+                offset={-20}
+                duration={500}
+                className="btn btn-accent hire-me w-[9rem]"
+              >
+                About Me
+              </Link>
+            </motion.div>
           </div>
-          <HomeIllustration />
+          <HomeIllustration childVariants={childVariants} />
         </div>
       </div>
     </motion.section>

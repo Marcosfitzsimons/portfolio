@@ -1,12 +1,28 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-// add change color illustration functionality.
+const homeIllustrationVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 2,
+    },
+  },
+};
 
 const HomeIllustration = () => {
   return (
-    <div className="home__illustration w-3/6 max-w-[40%] basis-[40%] grow-0 shrink-0 text-center relative px-4 hidden 2xl:block right-10">
+    <motion.div
+      className="home__illustration w-3/6 max-w-[40%] basis-[40%] grow-0 shrink-0 text-center relative px-4 hidden 2xl:block right-10"
+      variants={homeIllustrationVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="home-illustration-bg h-[380px] max-w-[491px] m-auto"></div>
-    </div>
+    </motion.div>
   );
 };
 

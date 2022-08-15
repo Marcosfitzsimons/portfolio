@@ -14,6 +14,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandJavascript } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
 import { DiReact } from "react-icons/di";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
