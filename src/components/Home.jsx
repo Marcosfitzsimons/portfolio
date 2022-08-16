@@ -89,8 +89,8 @@ const Home = () => {
               className="home__description mb-[70px] text-lg lg:text-xl 2xl:w-[80%] text-base-100"
               variants={childVariants}
             >
-              I'm a front-end developer who enjoys creating beautiful, friendly
-              and functional user experiences.
+              I'm a self-taught developer who enjoys creating beautiful,
+              friendly and functional user experiences.
             </motion.p>
             <motion.div className="" variants={childVariants}>
               <Link

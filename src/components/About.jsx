@@ -31,9 +31,12 @@ const About = () => {
                   basics of Javascript & Front-end Development.
                 </p>
                 <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[60%] my-5">
-                  At the beginning of 2021, due to a change of interests, I
-                  decided to leave my career as a nutritionist and start my way
-                  to become a front-end developer.
+                  Since 2021 I have been studying and putting into practice what
+                  I learn through personal projects.
+                </p>
+                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[60%] my-5">
+                  I like to learn by doing and I also believe that this is the
+                  best way to learn.
                 </p>
               </div>
             </div>

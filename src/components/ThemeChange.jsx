@@ -28,12 +28,12 @@ const ThemeChange = () => {
         </p>
       </div>
       <ul className="flex flex-col w-full bg-secondary border-2 border-secondary/70 p-3">
-        <li className="flex items-center gap-1">
+        <li className="flex items-center gap-[.4rem]">
           <div className="badge badge-lg bg-[#147b74] border-secondary z-20"></div>
           <button
             data-set-theme="default"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost w-full relative right-8 z-30 text-[#147b74] hover:opacity-70"
+            className="btn btn-ghost w-full relative right-8 z-30 text-neutral hover:opacity-70"
           >
             emerald
           </button>
@@ -43,7 +43,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="red"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost w-full relative right-12 z-30 text-[#c4032a] hover:opacity-70"
+            className="btn btn-ghost w-full relative right-12 z-30 text-neutral hover:opacity-70"
           >
             red
           </button>
@@ -53,7 +53,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="pink"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost w-full relative right-[2.88rem] z-30 text-[#df4996] hover:opacity-70"
+            className="btn btn-ghost w-full relative right-[2.88rem] z-30 text-neutral hover:opacity-70"
           >
             pink
           </button>
@@ -63,7 +63,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="cyan"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-[#0891B2] hover:opacity-70"
+            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-neutral hover:opacity-70"
           >
             cyan
           </button>
@@ -73,7 +73,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="yellow"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-[#EAB308] hover:opacity-70"
+            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-neutral hover:opacity-70"
           >
             gold
           </button>
