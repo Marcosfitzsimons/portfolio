@@ -73,7 +73,7 @@ const About = () => {
                     <span className="indicator-item badge hidden sm:flex sm:left-2 select-none bg-transparent text-neutral z-10">
                       unavailable
                     </span>
-                    <button className="btn btn-accent w-full sm:w-36 cursor-default bg-transparent z-0 hover:bg-transparent">
+                    <button className="btn btn-accent w-full sm:w-36 cursor-default bg-transparent z-0 hover:bg-transparent text-neutral">
                       Download CV
                     </button>
                   </div>
@@ -82,7 +82,7 @@ const About = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="btn btn-accent w-full sm:w-36"
+                    className="btn btn-accent w-full sm:w-36 text-neutral"
                   >
                     Hire Me
                   </Link>

@@ -98,7 +98,7 @@ const Home = () => {
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className="btn btn-accent hire-me w-[9rem]"
+                className="btn btn-accent hire-me w-[9rem] text-neutral"
               >
                 About Me
               </Link>
