@@ -87,7 +87,7 @@ const Portfolio = () => {
             projectImage={projectIllustration}
             liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
             repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
-            projectTitle="Chat App Css Illustartion"
+            projectTitle="Chat App Css Illustration"
             htmlIcon={<TiHtml5 />}
             tailwindIcon={<SiTailwindcss />}
             jsIcon={<TbBrandJavascript />}

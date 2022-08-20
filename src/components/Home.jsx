@@ -90,7 +90,7 @@ const Home = () => {
               variants={childVariants}
             >
               I'm a self-taught developer who enjoys creating beautiful,
-              friendly and functional user experiences.
+              friendly and functional user interfaces.
             </motion.p>
             <motion.div className="" variants={childVariants}>
               <Link

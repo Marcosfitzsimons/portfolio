@@ -1,6 +1,5 @@
 import React from "react";
-
-// add icons of technologies that I used in each project.
+import { motion } from "framer-motion";
 
 const PortfolioItem = ({
   projectImage,
@@ -13,21 +12,10 @@ const PortfolioItem = ({
   cssIcon,
   tailwindIcon,
 }) => {
-  const projectActive = () => {
-    // fix
-    const portfolioLinks = document.querySelector(".portfolio-links-container");
-    portfolioLinks.classList.toggle("active");
-  };
-  const clickProject = () => {
-    const projects = document.querySelectorAll(".portfolio-item");
-    projects.forEach((project) => {
-      project.addEventListener("click", projectActive);
-    });
-  };
   return (
-    <article
-      onClick={clickProject}
-      className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative"
+    <motion.article
+      className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative z-[100]"
+      whileHover={{ scale: 1.05 }}
     >
       <div className="portfolio-title-container absolute bg-accent/5 left-[2.2rem] w-[12.5rem] text-center top-[-1.7rem] px-2 t p-1 py-2 rounded-md transition-colors select-none">
         <h5 className="portfolio-title text-sm">{projectTitle}</h5>
@@ -64,14 +52,14 @@ const PortfolioItem = ({
           </div>
         </div>
       </div>
-      <div className="hidden tools-container transition-colors items-center text-neutral bg-secondary/90 shadow-sm shadow-neutral/40 absolute top-0 right-[-2.3rem] text-xl rounded-full p-[.5rem] z-90 border border-accent/60 hover:border-accent/50">
+      <div className="z-[-2] tools-container hidden transition-transform items-center text-neutral bg-secondary/90 shadow-sm shadow-neutral/40 absolute top-6 right-[-.2rem] text-xl rounded-full p-[.5rem] border border-accent/60 hover:border-accent/50">
         <span>{htmlIcon}</span>
         <span>{cssIcon}</span>
         <span>{tailwindIcon}</span>
         <span>{jsIcon}</span>
         <span>{reactIcon}</span>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
