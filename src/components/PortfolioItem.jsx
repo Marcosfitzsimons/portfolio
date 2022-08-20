@@ -14,7 +14,7 @@ const PortfolioItem = ({
 }) => {
   return (
     <motion.article
-      className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative z-[100]"
+      className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative"
       whileHover={{ scale: 1.05 }}
     >
       <div className="portfolio-title-container absolute bg-accent/5 left-[2.2rem] w-[12.5rem] text-center top-[-1.7rem] px-2 t p-1 py-2 rounded-md transition-colors select-none">

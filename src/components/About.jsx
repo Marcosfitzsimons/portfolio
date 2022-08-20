@@ -1,16 +1,29 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 // Linkedin - Let's connect, my chat is open if you wanna talk. ?
 // Cv - Learn a bit more about me and my experience. ?
 
 const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section
       className="about bg-primary section text-neutral min-h-screen"
       name="about"
     >
-      <div className="container pt-[60px] pb-[70px]">
+      <div
+        className="container pt-[60px] pb-[70px]"
+        ref={ref}
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.15s",
+        }}
+      >
         <div className="row">
           <div className="basis-full grow-0 shrink-0 py-4 max-w-full mb-[60px]">
             <h3 className="text-4xl pb-2 font-bold relative before:content[''] before:h-[4px] before:w-[50px] before:bg-accent before:absolute before:top-[100%] before:left-0 after:content[''] after:h-[4px] after:w-[25px] after:bg-accent after:absolute after:top-[100%] after:left-0 after:mt-[8px]">
