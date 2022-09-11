@@ -1,14 +1,14 @@
 import React from "react";
-import { RiGithubFill } from "react-icons/ri";
+import projectBookmarkImg from "../assets/project-bookmark.webp";
+import projectCalculatorImg from "../assets/project-calculator.webp";
+import projectAdviceImg from "../assets/project-advice.webp";
+import projectDashboardImg from "../assets/project-dashboard.webp";
+import projectCrowfundingImg from "../assets/project-crowdfunding.webp";
+import projectIllustrationImg from "../assets/project-illustration.webp";
+import projectShorteningImg from "../assets/project-url-shortening.webp";
+import projectEasybankImg from "../assets/project-easybank.webp";
 import PortfolioItem from "./PortfolioItem";
-import projectIllustration from "../assets/project-illustration.webp";
-import projectBookmark from "../assets/project-bookmark.webp";
-import projectCrowdfound from "../assets/project-crowdfunding.webp";
-import projectAdvice from "../assets/project-advice.webp";
-import projectDashboard from "../assets/project-dashboard.webp";
-import projectEasybank from "../assets/project-easybank.webp";
-import projectCalculator from "../assets/project-calculator.webp";
-import projectUrlShortening from "../assets/project-url-shortening.webp";
+import { RiGithubFill } from "react-icons/ri";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -20,6 +20,103 @@ import { useInView } from "framer-motion";
 const Portfolio = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  const projectsData = [
+    {
+      id: 1,
+      image: projectBookmarkImg,
+      liveSiteUrl: "https://bookmark-react-app.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/bookmark-react-app",
+      title: "Bookmark React App",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+    {
+      id: 2,
+      image: projectCalculatorImg,
+      liveSiteUrl: "https://calculator-app-w-react.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/calculator-app-w-react",
+      title: "Calculator React App",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+    {
+      id: 3,
+      image: projectAdviceImg,
+      liveSiteUrl: "https://advice-generator-app-eight.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/advice-generator-app",
+      title: "Advice Generator App",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+    {
+      id: 4,
+      image: projectDashboardImg,
+      liveSiteUrl:
+        "https://social-media-dashboard-w-theme-switcher.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher",
+      title: "Social Media Dashboard",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+    {
+      id: 5,
+      image: projectCrowfundingImg,
+      liveSiteUrl: "https://crowdfunding-product-page-ivory.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/crowdfunding-product-page",
+      title: "Crowdfund Product Page",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+    {
+      id: 6,
+      image: projectIllustrationImg,
+      liveSiteUrl: "https://chat-app-illustration-five.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind",
+      title: "Chat App Css Illustration",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+    {
+      id: 7,
+      image: projectShorteningImg,
+      liveSiteUrl: "https://url-shortening-w-api.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/url-shortening-w-api",
+      title: "Shortly Url Shortening API",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+    {
+      id: 8,
+      image: projectEasybankImg,
+      liveSiteUrl: "https://easybank-landing-page-alpha-seven.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/easybank-landing-page",
+      title: "Easybank Landing Page",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+  ];
 
   return (
     <section
@@ -48,80 +145,9 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="flex flex-col items-center row sm:grid sm:gap-6 sm:grid-cols-2 sm:w-full xl:grid-cols-3 2xl:grid-cols-4 2xl:gap-3">
-          <PortfolioItem
-            projectImage={projectBookmark}
-            liveSiteUrl="https://bookmark-react-app.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/bookmark-react-app"
-            projectTitle="Bookmark React App"
-            htmlIcon={<TiHtml5 />}
-            tailwindIcon={<SiTailwindcss />}
-            jsIcon={<TbBrandJavascript />}
-            reactIcon={<DiReact />}
-          />
-          <PortfolioItem
-            projectImage={projectCalculator}
-            liveSiteUrl="https://calculator-app-w-react.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/calculator-app-w-react"
-            projectTitle="Calculator React App"
-            htmlIcon={<TiHtml5 />}
-            cssIcon={<IoLogoCss3 />}
-            jsIcon={<TbBrandJavascript />}
-            reactIcon={<DiReact />}
-          />
-          <PortfolioItem
-            projectImage={projectAdvice}
-            liveSiteUrl="https://advice-generator-app-eight.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/advice-generator-app"
-            projectTitle="Advice Generator App"
-            htmlIcon={<TiHtml5 />}
-            cssIcon={<IoLogoCss3 />}
-            jsIcon={<TbBrandJavascript />}
-          />
-          <PortfolioItem
-            projectImage={projectDashboard}
-            liveSiteUrl="https://social-media-dashboard-w-theme-switcher.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher"
-            projectTitle="Social Media Dashboard"
-            htmlIcon={<TiHtml5 />}
-            cssIcon={<IoLogoCss3 />}
-            jsIcon={<TbBrandJavascript />}
-          />
-          <PortfolioItem
-            projectImage={projectCrowdfound}
-            liveSiteUrl="https://crowdfunding-product-page-ivory.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/crowdfunding-product-page"
-            projectTitle="Crowdfund Product Page"
-            htmlIcon={<TiHtml5 />}
-            cssIcon={<IoLogoCss3 />}
-            jsIcon={<TbBrandJavascript />}
-          />
-          <PortfolioItem
-            projectImage={projectIllustration}
-            liveSiteUrl="https://chat-app-illustration-five.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind"
-            projectTitle="Chat App Css Illustration"
-            htmlIcon={<TiHtml5 />}
-            tailwindIcon={<SiTailwindcss />}
-            jsIcon={<TbBrandJavascript />}
-          />
-          <PortfolioItem
-            projectImage={projectUrlShortening}
-            liveSiteUrl="https://url-shortening-w-api.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/url-shortening-w-api"
-            projectTitle="Shortly Url Shortening API"
-            htmlIcon={<TiHtml5 />}
-            cssIcon={<IoLogoCss3 />}
-            jsIcon={<TbBrandJavascript />}
-          />
-          <PortfolioItem
-            projectImage={projectEasybank}
-            liveSiteUrl="https://easybank-landing-page-alpha-seven.vercel.app/"
-            repositoryUrl="https://github.com/Marcosfitzsimons/easybank-landing-page"
-            projectTitle="Easybank Landing Page"
-            htmlIcon={<TiHtml5 />}
-            cssIcon={<IoLogoCss3 />}
-            jsIcon={<TbBrandJavascript />}
-          />
+          {projectsData.map((project) => {
+            return <PortfolioItem key={project.id} project={project} />;
+          })}
         </div>
         <div className="row text-center py-4">
           <p className="text-lg pb-5 text-base-100 flex flex-col items-center gap-2 lg:flex-row lg:items-center lg:gap-2">

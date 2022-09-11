@@ -1,38 +1,68 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
-const PortfolioItem = ({
-  projectImage,
-  liveSiteUrl,
-  repositoryUrl,
-  projectTitle,
-  htmlIcon,
-  reactIcon,
-  jsIcon,
-  cssIcon,
-  tailwindIcon,
-}) => {
+const PortfolioItem = ({ project }) => {
+  const [isShown, setIsShown] = useState(false);
+
+  const modalButton = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+      },
+    },
+  };
+
   return (
     <motion.article
       className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative"
       whileHover={{ scale: 1.05 }}
+      onMouseEnter={() => {
+        setIsShown(true);
+      }}
+      onMouseLeave={() => {
+        setIsShown(false);
+      }}
     >
       <div className="portfolio-title-container absolute bg-accent/5 left-[2.2rem] w-[12.5rem] text-center top-[-1.7rem] px-2 t p-1 py-2 rounded-md transition-colors select-none">
-        <h5 className="portfolio-title text-sm">{projectTitle}</h5>
+        <h5 className="portfolio-title text-sm">{project.title}</h5>
       </div>
-      <div className="portfolio-item-inner border-[4px] border-accent/60 rounded-xl overflow-hidden hover:border-accent/90">
-        <div className="portfolio-img-container">
+      <div className="portfolio-item-inner border-[1px] p-1 border-accent/60 rounded-xl overflow-hidden hover:border-accent/90">
+        <div className="portfolio-img-container relative">
+          {isShown && (
+            <motion.label
+              variants={modalButton}
+              initial="hidden"
+              animate="show"
+              htmlFor="my-modal-3"
+              className="modal-button absolute top-[4.6rem]
+            left-[4.2rem] p-2 border border-accent cursor-pointer bg-primary/50
+            uppercase z-[100]"
+            >
+              about project
+            </motion.label>
+          )}
           <img
-            src={projectImage}
-            alt="#"
+            src={project.image}
+            alt="-"
             className="w-full z-20 max-h-[200px] rounded-lg"
           />
+          {isShown && (
+            <motion.div
+              variants={modalButton}
+              initial="hidden"
+              animate="show"
+              className="card-hover-bg absolute left-0 top-0 w-full h-full bg-black/30 z-50 rounded-md"
+            ></motion.div>
+          )}
         </div>
 
         <div className="portfolio-links-container flex bottom-[-2.5rem] left-0 absolute z-[9] gap-2 justify-center items-center w-full">
           <div className="btn btn-accent transition-colors cursor-pointer portfolio-links-item p-2 rounded-md flex items-center justify-center border-transparent bg-accent/60">
             <a
-              href={liveSiteUrl}
+              href={project.liveSiteUrl}
               target="_blank"
               rel="noreferrer"
               className="select-none font-medium text-center text-sm flex items-center justify-center text-neutral w-[5.9rem] h-[2rem]"
@@ -42,7 +72,7 @@ const PortfolioItem = ({
           </div>
           <div className="btn btn-accent transition-colors cursor-pointer portfolio-links-item p-2 rounded-md flex items-center justify-center border-transparent bg-accent/60">
             <a
-              href={repositoryUrl}
+              href={project.repositoryUrl}
               target="_blank"
               rel="noreferrer"
               className="select-none font-medium text-center text-sm flex items-center justify-center leading-4 text-neutral w-[5.9rem] h-[2rem]"
@@ -51,13 +81,6 @@ const PortfolioItem = ({
             </a>
           </div>
         </div>
-      </div>
-      <div className="z-[-2] tools-container hidden transition-transform items-center text-neutral bg-secondary/90 shadow-sm shadow-neutral/40 absolute top-6 right-[-.2rem] text-xl rounded-full p-[.5rem] border border-accent/60 hover:border-accent/50">
-        <span>{htmlIcon}</span>
-        <span>{cssIcon}</span>
-        <span>{tailwindIcon}</span>
-        <span>{jsIcon}</span>
-        <span>{reactIcon}</span>
       </div>
     </motion.article>
   );
