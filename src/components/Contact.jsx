@@ -101,7 +101,7 @@ const Contact = () => {
                   value={toSend.message}
                   onChange={handleChange}
                   placeholder="Message"
-                ></textarea>
+                />
               </div>
             </div>
             <div className="row w-full btn-submit-container">

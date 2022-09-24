@@ -5,7 +5,7 @@ import projectAdviceImg from "../assets/project-advice.webp";
 import projectDashboardImg from "../assets/project-dashboard.webp";
 import projectCrowfundingImg from "../assets/project-crowdfunding.webp";
 import projectIllustrationImg from "../assets/project-illustration.webp";
-import projectShorteningImg from "../assets/project-url-shortening.webp";
+import projectTodoImg from "../assets/project-todo-app.webp";
 import projectEasybankImg from "../assets/project-easybank.webp";
 import PortfolioItem from "./PortfolioItem";
 import { RiGithubFill } from "react-icons/ri";
@@ -24,6 +24,17 @@ const Portfolio = () => {
   const projectsData = [
     {
       id: 1,
+      image: projectTodoImg,
+      liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
+      title: "Todo React App",
+      htmlIcon: <TiHtml5 />,
+      cssIcon: <IoLogoCss3 />,
+      jsIcon: <TbBrandJavascript />,
+      reactIcon: <DiReact />,
+    },
+    {
+      id: 2,
       image: projectBookmarkImg,
       liveSiteUrl: "https://bookmark-react-app.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/bookmark-react-app",
@@ -34,7 +45,7 @@ const Portfolio = () => {
       reactIcon: <DiReact />,
     },
     {
-      id: 2,
+      id: 3,
       image: projectCalculatorImg,
       liveSiteUrl: "https://calculator-app-w-react.vercel.app/",
       repositoryUrl:
@@ -46,7 +57,7 @@ const Portfolio = () => {
       reactIcon: <DiReact />,
     },
     {
-      id: 3,
+      id: 4,
       image: projectAdviceImg,
       liveSiteUrl: "https://advice-generator-app-eight.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/advice-generator-app",
@@ -57,7 +68,7 @@ const Portfolio = () => {
       reactIcon: <DiReact />,
     },
     {
-      id: 4,
+      id: 5,
       image: projectDashboardImg,
       liveSiteUrl:
         "https://social-media-dashboard-w-theme-switcher.vercel.app/",
@@ -70,7 +81,7 @@ const Portfolio = () => {
       reactIcon: <DiReact />,
     },
     {
-      id: 5,
+      id: 6,
       image: projectCrowfundingImg,
       liveSiteUrl: "https://crowdfunding-product-page-ivory.vercel.app/",
       repositoryUrl:
@@ -82,23 +93,12 @@ const Portfolio = () => {
       reactIcon: <DiReact />,
     },
     {
-      id: 6,
+      id: 7,
       image: projectIllustrationImg,
       liveSiteUrl: "https://chat-app-illustration-five.vercel.app/",
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind",
       title: "Chat App Css Illustration",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
-    },
-    {
-      id: 7,
-      image: projectShorteningImg,
-      liveSiteUrl: "https://url-shortening-w-api.vercel.app/",
-      repositoryUrl: "https://github.com/Marcosfitzsimons/url-shortening-w-api",
-      title: "Shortly Url Shortening API",
       htmlIcon: <TiHtml5 />,
       cssIcon: <IoLogoCss3 />,
       jsIcon: <TbBrandJavascript />,

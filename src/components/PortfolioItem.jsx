@@ -38,8 +38,8 @@ const PortfolioItem = ({ project }) => {
               animate="show"
               htmlFor="my-modal-3"
               className="modal-button absolute top-[4.6rem]
-            left-[4.2rem] p-2 border border-accent cursor-pointer bg-primary/50
-            uppercase z-[100]"
+            left-[4.2rem] p-2 border hover:border-accent/60 cursor-pointer bg-primary/50
+            uppercase z-[100] border-accent/90"
             >
               about project
             </motion.label>
