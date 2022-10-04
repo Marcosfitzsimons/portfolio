@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useRef } from "react";
+import { v4 as uuidv4 } from "uuid";
 import { useInView } from "framer-motion";
 
 // Linkedin - Let's connect, my chat is open if you wanna talk. ?
@@ -9,6 +10,40 @@ import { useInView } from "framer-motion";
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const tools = [
+    {
+      id: uuidv4(),
+      name: "Javascript",
+    },
+    {
+      id: uuidv4(),
+      name: "React",
+    },
+    {
+      id: uuidv4(),
+      name: "CSS",
+    },
+    {
+      id: uuidv4(),
+      name: "TailwindCSS",
+    },
+    {
+      id: uuidv4(),
+      name: "Bootstrap",
+    },
+    {
+      id: uuidv4(),
+      name: "HTML",
+    },
+    {
+      id: uuidv4(),
+      name: "GitHub",
+    },
+    {
+      id: uuidv4(),
+      name: "Framer Motion",
+    },
+  ];
 
   return (
     <section
@@ -48,8 +83,8 @@ const About = () => {
                   I learn through personal projects.
                 </p>
                 <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[60%] my-5">
-                  I like to learn by doing and I also believe that this is the
-                  best way to learn.
+                  I like to learn by doing and I think this is the best way to
+                  learn something new.
                 </p>
               </div>
             </div>
@@ -59,27 +94,16 @@ const About = () => {
               </h4>
               <div className="about-skills-container my-4 flex flex-col items-start gap-5">
                 <ul className="about-skills-list flex gap-2 flex-wrap rounded-md p-4 pl-0 w-[90%]">
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    Javascript
-                  </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    React
-                  </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    CSS
-                  </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    TailwindCSS
-                  </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    Bootstrap
-                  </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    HTML
-                  </li>
-                  <li className="about-skills-item btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm">
-                    Github
-                  </li>
+                  {tools.map((tool) => {
+                    return (
+                      <li
+                        key={tool.id}
+                        className="about-skills-item transition-all duration-200 hover:-translate-y-[2px] hover:-translate-x-[2px] select-none cursor-default btn no-animation text-neutral font-medium border border-accent/70 hover:border-accent/40 bg-accent/10 hover:bg-accent/10 btn-sm"
+                      >
+                        {tool.name}
+                      </li>
+                    );
+                  })}
                 </ul>
                 <div className="about-buttons-container flex flex-col w-full sm:w-auto sm:flex-row gap-5 my-5">
                   <div className="indicator w-full sm:w-36 opacity-90">
