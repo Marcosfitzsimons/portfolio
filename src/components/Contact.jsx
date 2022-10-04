@@ -8,35 +8,42 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 
 const Contact = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
+  const [errorMsg, setErrorMsg] = useState(false);
+  const [successMsg, setSuccessMsg] = useState(false);
+  const [hiddenForm, setHiddenForm] = useState(true);
   const [toSend, setToSend] = useState({
     from_name: "",
     message: "",
     reply_to: "",
   });
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_ju1uvdh", "template_mkotu2d", toSend, "cPxtXtNu7QsBqHWX2")
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-      });
+    if (
+      toSend.from_name === "" ||
+      toSend.message === "" ||
+      toSend.reply_to === ""
+    ) {
+      setErrorMsg(true);
+    } else {
+      send("service_ju1uvdh", "template_mkotu2d", toSend, "cPxtXtNu7QsBqHWX2")
+        .then((response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSuccessMsg(true);
+          setErrorMsg(false);
+          setHiddenForm(false);
+        })
+        .catch((err) => {
+          console.log("FAILED...", err);
+        });
+    }
   };
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
-
-  const formHidden = () => {
-    const form = document.querySelector(".form-container");
-    form.classList.add("hidden");
-    const alertSuccess = document.querySelector(".alert-success-container");
-    alertSuccess.classList.remove("hidden");
   };
 
   return (
@@ -66,65 +73,93 @@ const Contact = () => {
         <h5 className="contact-subtitle py-4 text-center text-lg">
           I'm very responsive to messages
         </h5>
-        <div className="form-container row w-full">
-          <form
-            onSubmit={onSubmit}
-            className="contact-form py-4 flex flex-col items-center w-full text-gray-700 font-medium lg:w-[80%] xl:w-[65%] lg:m-auto"
-          >
-            <div className="row w-full lg:flex lg:justify-between lg:gap-2">
-              <div className="form-item flex justify-center py-4 lg:basis-[50%]">
-                <input
-                  type="text"
-                  name="from_name"
-                  placeholder="Name"
-                  value={toSend.from_name}
-                  onChange={handleChange}
-                  className="form-control input input-bordered input-accent w-full"
-                />
+        {hiddenForm && (
+          <div className="form-container row w-full">
+            <form
+              onSubmit={onSubmit}
+              className="contact-form py-4 flex flex-col items-center w-full text-gray-700 font-medium lg:w-[80%] xl:w-[65%] lg:m-auto"
+            >
+              <div className="row w-full lg:flex lg:justify-between lg:gap-2">
+                <div className="form-item flex justify-center py-4 lg:basis-[50%]">
+                  <input
+                    type="text"
+                    name="from_name"
+                    placeholder="Name"
+                    value={toSend.from_name}
+                    onChange={handleChange}
+                    className="form-control input input-bordered input-accent w-full"
+                  />
+                </div>
+                <div className="form-item flex justify-center py-4 lg:basis-[50%]">
+                  <input
+                    type="text"
+                    name="reply_to"
+                    value={toSend.reply_to}
+                    onChange={handleChange}
+                    className="form-control input input-bordered input-accent w-full"
+                    placeholder="Email"
+                  />
+                </div>
               </div>
-              <div className="form-item flex justify-center py-4 lg:basis-[50%]">
-                <input
-                  type="text"
-                  name="reply_to"
-                  value={toSend.reply_to}
-                  onChange={handleChange}
-                  className="form-control input input-bordered input-accent w-full"
-                  placeholder="Email"
-                />
+              <div className="row w-full">
+                <div className="form-item col-12 py-4 flex justify-center">
+                  <textarea
+                    name="message"
+                    className="form-control input input-bordered input-accent w-full h-20"
+                    value={toSend.message}
+                    onChange={handleChange}
+                    placeholder="Message"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="row w-full">
-              <div className="form-item col-12 py-4 flex justify-center">
-                <textarea
-                  name="message"
-                  className="form-control input input-bordered input-accent w-full h-20"
-                  value={toSend.message}
-                  onChange={handleChange}
-                  placeholder="Message"
-                />
+              {errorMsg && (
+                <div className="row w-full">
+                  <div className="alert alert-error shadow-lg bg-transparent text-[#c4032a] px-0 relative bottom-4">
+                    <div className="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="stroke-current flex-shrink-0 h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      <span className="text-sm lg:text-base">
+                        You should complete all the inputs before sending your
+                        message.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+              <div className="row w-full btn-submit-container">
+                <div className="form-item col-12 py-4 w-full flex justify-center">
+                  <button
+                    type="submit"
+                    className="btn btn-accent w-full sm:w-auto"
+                  >
+                    Send Message
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className="row w-full btn-submit-container">
-              <div className="form-item col-12 py-4 w-full flex justify-center">
-                <button
-                  type="submit"
-                  className="btn btn-accent w-full sm:w-auto"
-                  onClick={formHidden}
-                >
-                  Send Message
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div className="py-4 alert-success-container alert-success mt-[2rem] max-w-[550px] mx-auto alert shadow-lg bg-accent text-neutral hidden">
-          <div className="flex flex-col justify-center sm:flex-row text-center">
-            <BsCheckAll className="text-3xl" />
-            <span>
-              Your message has been sent, thank you for contacting me!
-            </span>
+            </form>
           </div>
-        </div>
+        )}
+        {successMsg && (
+          <div className="alert-success-container py-4 alert-success mt-[2rem] max-w-[550px] mx-auto alert shadow-lg bg-accent text-neutral">
+            <div className="flex flex-col justify-center sm:flex-row text-center">
+              <BsCheckAll className="text-3xl" />
+              <span>
+                Your message has been sent, thank you for contacting me!
+              </span>
+            </div>
+          </div>
+        )}
         <div className="py-4 pt-8 contact-info w-full text-base-100">
           <div className="contact-info-container lg:flex lg:gap-6 lg:justify-center w-full lg:mx-auto">
             <div className="contact-info__location flex py-2 items-center gap-2">
