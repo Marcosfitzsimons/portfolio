@@ -139,20 +139,19 @@ const Portfolio = () => {
             </h3>
           </div>
         </div>
-        <div className="row">
+        <div className="row xl:hidden">
           <div className="portfolio-heading basis-full grow-0 shrink-0 max-w-full py-4">
             <h4 className="text-xl pb-5">My Last Projects:</h4>
           </div>
         </div>
-        <div className="flex flex-col items-center row sm:grid sm:gap-6 sm:grid-cols-2 sm:w-full xl:grid-cols-3 2xl:grid-cols-4 2xl:gap-3">
+        <div className="flex flex-col items-center row sm:grid sm:gap-6 sm:grid-cols-2 sm:w-full xl:grid-cols-3 2xl:grid-cols-4 2xl:gap-0 relative">
           {projectsData.map((project) => {
             return <PortfolioItem key={project.id} project={project} />;
           })}
         </div>
-        <div className="row text-center py-4 xl:absolute xl:right-0 xl:top-0 xl:[80%] xl:flex xl:items-center xl:justify-end xl:pt-16 xl:pr-32 2xl:pr-40">
-          <p className="text-lg pb-5 text-base-100 flex flex-col items-center gap-2 lg:flex-row lg:gap-2 xl:bg-accent/10 xl:border xl:border-accent/40 xl:px-2 xl:py-2 xl:rounded-xl">
-            If you like, you can see more of my personal projects in my github
-            account:
+        <div className="row text-center py-4 xl:flex">
+          <p className="text-base pb-5 text-base-100 flex flex-col items-center gap-2 lg:flex-row lg:gap-2 xl:bg-accent/10 xl:border xl:border-accent/40 xl:px-2 xl:py-2 xl:rounded-md">
+            You can see more of my personal projects in my github account:
             <a
               href="https://github.com/Marcosfitzsimons"
               target="_blank"
