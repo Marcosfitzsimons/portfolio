@@ -11,6 +11,8 @@ const Contact = () => {
   const [errorMsg, setErrorMsg] = useState(false);
   const [successMsg, setSuccessMsg] = useState(false);
   const [hiddenForm, setHiddenForm] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+
   const [toSend, setToSend] = useState({
     from_name: "",
     message: "",
@@ -29,6 +31,7 @@ const Contact = () => {
     ) {
       setErrorMsg(true);
     } else {
+      setIsLoading(true);
       send("service_ju1uvdh", "template_mkotu2d", toSend, "cPxtXtNu7QsBqHWX2")
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -143,7 +146,7 @@ const Contact = () => {
                     type="submit"
                     className="btn btn-accent w-full sm:w-auto"
                   >
-                    Send Message
+                    {isLoading ? "Sending..." : "Send message"}
                   </button>
                 </div>
               </div>
