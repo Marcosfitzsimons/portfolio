@@ -124,7 +124,7 @@ const Portfolio = () => {
       name="portfolio"
     >
       <div
-        className="container pb-10"
+        className="container pb-10 relative"
         ref={ref}
         style={{
           transform: isInView ? "none" : "translateX(-200px)",
@@ -133,7 +133,7 @@ const Portfolio = () => {
         }}
       >
         <div className="row">
-          <div className="portfolio__title basis-full grow-0 shrink-0 py-4 max-w-full mb-[60px]">
+          <div className="portfolio__title basis-full grow-0 shrink-0 max-w-full mb-[60px]">
             <h3 className="text-4xl pb-2 font-bold relative before:content[''] before:h-[4px] before:w-[50px] before:bg-accent before:absolute before:top-[100%] before:left-0 after:content[''] after:h-[4px] after:w-[25px] after:bg-accent after:absolute after:top-[100%] after:left-0 after:mt-[8px]">
               Projects
             </h3>
@@ -149,8 +149,8 @@ const Portfolio = () => {
             return <PortfolioItem key={project.id} project={project} />;
           })}
         </div>
-        <div className="row text-center py-4">
-          <p className="text-lg pb-5 text-base-100 flex flex-col items-center gap-2 lg:flex-row lg:items-center lg:gap-2">
+        <div className="row text-center py-4 xl:absolute xl:right-0 xl:top-0 xl:[80%] xl:flex xl:items-center xl:justify-end xl:pt-16 xl:pr-32 2xl:pr-40">
+          <p className="text-lg pb-5 text-base-100 flex flex-col items-center gap-2 lg:flex-row lg:gap-2 xl:bg-accent/10 xl:border xl:border-accent/40 xl:px-2 xl:py-2 xl:rounded-xl">
             If you like, you can see more of my personal projects in my github
             account:
             <a

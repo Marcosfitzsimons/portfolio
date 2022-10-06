@@ -37,7 +37,7 @@ const Nav = () => {
             onClick={handleClose}
             to="portfolio"
             smooth={true}
-            offset={-50}
+            offset={0}
             duration={500}
             className="cursor-pointer nav-list__link portfolio-link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-accent/20"
           >
