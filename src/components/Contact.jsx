@@ -5,6 +5,7 @@ import { BsCheckAll } from "react-icons/bs";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import { MdLanguage } from "react-icons/md";
 import { useRef } from "react";
+import Footer from "./Footer";
 import { useInView } from "framer-motion";
 
 const Contact = () => {
@@ -179,6 +180,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </section>
   );

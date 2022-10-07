@@ -6,7 +6,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="footer h-[5rem] bg-primary w-full p-[30px] flex justify-center items-center">
+    <footer className="footer h-[5rem] bg-primary w-full lg:pt-8 flex justify-center items-center">
       <div className="footer-container w-full lg:w-[80%] xl:w-[65%] flex items-center justify-between">
         <div className="linkedin-container lg:w-[10rem] flex gap-3 items-center text-base">
           <p className="text-base-100 lg:text-lg">Let's Connect:</p>

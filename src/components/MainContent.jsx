@@ -4,7 +4,6 @@ import About from "./About";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import NavToggle from "./NavToggle";
-import Footer from "./Footer";
 
 const MainContent = () => {
   const showAside = () => {
@@ -21,7 +20,6 @@ const MainContent = () => {
       <Portfolio />
       <About />
       <Contact />
-      <Footer />
     </main>
   );
 };
