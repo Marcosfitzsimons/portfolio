@@ -17,8 +17,7 @@ const PortfolioItem = ({ project }) => {
 
   return (
     <motion.article
-      className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative"
-      whileHover={{ scale: 1.05 }}
+      className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative origin-center hover:origin-bottom  hover:scale-105 transition-all duration-200 align-middle"
       onMouseEnter={() => {
         setIsShown(true);
       }}
@@ -30,7 +29,7 @@ const PortfolioItem = ({ project }) => {
         <h5 className="portfolio-title text-sm">{project.title}</h5>
       </div>
       <div className="portfolio-item-inner border-[1px] p-1 border-accent/60 rounded-xl overflow-hidden hover:border-accent/90">
-        <div className="portfolio-img-container relative">
+        <div className="overflow-hidden portfolio-img-container relative">
           {isShown && (
             <motion.label
               variants={modalButton}
@@ -47,7 +46,7 @@ const PortfolioItem = ({ project }) => {
           <img
             src={project.image}
             alt="-"
-            className="w-full z-20 max-h-[200px] rounded-lg"
+            className="w-full z-90 max-h-[200px] rounded-lg"
           />
           {isShown && (
             <motion.div
