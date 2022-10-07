@@ -107,10 +107,10 @@ const About = () => {
                 </ul>
                 <div className="about-buttons-container flex flex-col w-full sm:w-auto sm:flex-row gap-5 my-5">
                   <div className="indicator w-full sm:w-36 opacity-90">
-                    <span className="indicator-item badge hidden sm:flex sm:left-2 select-none bg-transparent text-neutral z-10">
+                    <span className="indicator-item badge hidden sm:flex sm:left-2 select-none bg-transparent text-neutral z-10 opacity-50">
                       unavailable
                     </span>
-                    <button className="btn btn-accent w-full sm:w-36 cursor-default bg-transparent z-0 hover:bg-transparent text-neutral">
+                    <button className="btn btn-accent w-full sm:w-36 cursor-default bg-transparent z-0 hover:bg-transparent text-neutral btn-disabled border border-accent/40">
                       Download CV
                     </button>
                   </div>

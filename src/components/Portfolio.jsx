@@ -28,10 +28,24 @@ const Portfolio = () => {
       liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
       title: "Todo React App",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
+      tools: [
+        {
+          id: 1,
+          icon: <TiHtml5 />,
+        },
+        {
+          id: 2,
+          icon: <IoLogoCss3 />,
+        },
+        {
+          id: 3,
+          icon: <TbBrandJavascript />,
+        },
+        {
+          id: 4,
+          icon: <DiReact />,
+        },
+      ],
     },
     {
       id: 2,
@@ -39,10 +53,24 @@ const Portfolio = () => {
       liveSiteUrl: "https://bookmark-react-app.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/bookmark-react-app",
       title: "Bookmark React App",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
+      tools: [
+        {
+          id: 1,
+          icon: <TiHtml5 />,
+        },
+        {
+          id: 2,
+          icon: <IoLogoCss3 />,
+        },
+        {
+          id: 3,
+          icon: <TbBrandJavascript />,
+        },
+        {
+          id: 4,
+          icon: <DiReact />,
+        },
+      ],
     },
     {
       id: 3,
@@ -51,10 +79,24 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/calculator-app-w-react",
       title: "Calculator React App",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
+      tools: [
+        {
+          id: 1,
+          icon: <TiHtml5 />,
+        },
+        {
+          id: 2,
+          icon: <IoLogoCss3 />,
+        },
+        {
+          id: 3,
+          icon: <TbBrandJavascript />,
+        },
+        {
+          id: 4,
+          icon: <DiReact />,
+        },
+      ],
     },
     {
       id: 4,
@@ -62,10 +104,24 @@ const Portfolio = () => {
       liveSiteUrl: "https://advice-generator-app-eight.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/advice-generator-app",
       title: "Advice Generator App",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
+      tools: [
+        {
+          id: 1,
+          icon: <TiHtml5 />,
+        },
+        {
+          id: 2,
+          icon: <IoLogoCss3 />,
+        },
+        {
+          id: 3,
+          icon: <TbBrandJavascript />,
+        },
+        {
+          id: 4,
+          icon: <DiReact />,
+        },
+      ],
     },
     {
       id: 5,
@@ -75,10 +131,24 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher",
       title: "Social Media Dashboard",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
+      tools: [
+        {
+          id: 1,
+          icon: <TiHtml5 />,
+        },
+        {
+          id: 2,
+          icon: <IoLogoCss3 />,
+        },
+        {
+          id: 3,
+          icon: <TbBrandJavascript />,
+        },
+        {
+          id: 4,
+          icon: <DiReact />,
+        },
+      ],
     },
     {
       id: 6,
@@ -87,10 +157,24 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/crowdfunding-product-page",
       title: "Crowdfund Product Page",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
+      tools: [
+        {
+          id: 1,
+          icon: <TiHtml5 />,
+        },
+        {
+          id: 2,
+          icon: <IoLogoCss3 />,
+        },
+        {
+          id: 3,
+          icon: <TbBrandJavascript />,
+        },
+        {
+          id: 4,
+          icon: <DiReact />,
+        },
+      ],
     },
     {
       id: 7,
@@ -99,10 +183,24 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind",
       title: "Chat App Css Illustration",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
+      tools: [
+        {
+          id: 1,
+          icon: <TiHtml5 />,
+        },
+        {
+          id: 2,
+          icon: <IoLogoCss3 />,
+        },
+        {
+          id: 3,
+          icon: <TbBrandJavascript />,
+        },
+        {
+          id: 4,
+          icon: <DiReact />,
+        },
+      ],
     },
     {
       id: 8,
@@ -111,10 +209,24 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/easybank-landing-page",
       title: "Easybank Landing Page",
-      htmlIcon: <TiHtml5 />,
-      cssIcon: <IoLogoCss3 />,
-      jsIcon: <TbBrandJavascript />,
-      reactIcon: <DiReact />,
+      tools: [
+        {
+          id: 1,
+          icon: <TiHtml5 />,
+        },
+        {
+          id: 2,
+          icon: <IoLogoCss3 />,
+        },
+        {
+          id: 3,
+          icon: <TbBrandJavascript />,
+        },
+        {
+          id: 4,
+          icon: <DiReact />,
+        },
+      ],
     },
   ];
 
