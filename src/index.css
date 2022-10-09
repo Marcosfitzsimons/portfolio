@@ -11,11 +11,11 @@
     /* or any other variables/style */
   }
   [data-theme="pink"] {
-    --accent: #df4996;
+    --accent: #db2777;
     --homeImg: url("./assets/developer-pink.webp");
   }
-  [data-theme="cyan"] {
-    --accent: #0891b2;
+  [data-theme="indigo"] {
+    --accent: #4338ca;
     --homeImg: url("./assets/developer-cyan.svg");
   }
   [data-theme="yellow"] {
@@ -30,6 +30,7 @@
     overflow-x: hidden;
     background-color: #151515;
   }
+
   .section {
     background-color: #151515;
     min-height: 100vh;
@@ -38,6 +39,7 @@
     opacity: 1;
     padding: 30px;
   }
+
   .container {
     max-width: 1100px;
     margin: auto;

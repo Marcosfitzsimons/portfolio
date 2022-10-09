@@ -49,13 +49,13 @@ const ThemeChange = () => {
           </button>
         </li>
         <li className="flex items-center gap-[.4rem]">
-          <div className="badge badge-lg bg-[#0891B2] border-secondary z-20"></div>
+          <div className="badge badge-lg bg-[#4338ca] border-secondary z-20"></div>
           <button
-            data-set-theme="cyan"
+            data-set-theme="indigo"
             data-act-class="ACTIVECLASS"
-            className="btn btn-ghost w-full relative right-[2.85rem] z-30 text-neutral hover:opacity-70"
+            className="btn btn-ghost w-full relative right-[2.41rem] z-30 text-neutral hover:opacity-70"
           >
-            cyan
+            indigo
           </button>
         </li>
         <li className="flex items-center gap-[.4rem]">

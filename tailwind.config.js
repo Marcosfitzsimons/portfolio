@@ -23,14 +23,14 @@ module.exports = {
         pink: {
           "primary": "#151515", // veryDarkGray
           "secondary": "#222222", // darkGray
-          "accent": "#df4996", // themeColor
+          "accent": "#db2777", // themeColor
           "neutral": "#f8fffe", // veryLightGray
           "base-100": "#e5e0df", // lightGray
         },
-        cyan: {
+        indigo: {
           "primary": "#151515", // veryDarkGray
           "secondary": "#222222", // darkGray
-          "accent": "#0891B2", // themeColor
+          "accent": "#4338ca", // themeColor
           "neutral": "#f8fffe", // veryLightGray
           "base-100": "#e5e0df", // lightGray df4996
         },
