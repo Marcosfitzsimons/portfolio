@@ -10,10 +10,6 @@
     --homeImg: url("./assets/developer-default.webp");
     /* or any other variables/style */
   }
-  [data-theme="red"] {
-    --accent: #c4032a;
-    --homeImg: url("./assets/developer-red.webp");
-  }
   [data-theme="pink"] {
     --accent: #df4996;
     --homeImg: url("./assets/developer-pink.webp");

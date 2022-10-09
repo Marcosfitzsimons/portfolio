@@ -20,13 +20,6 @@ module.exports = {
           "neutral": "#f8fffe", // veryLightGray
           "base-100": "#e5e0df", // lightGray
         },
-        red: {
-          "primary": "#151515", // veryDarkGray
-          "secondary": "#222222", // darkGray
-          "accent": "#c4032a", // themeColor
-          "neutral": "#f8fffe", // veryLightGray
-          "base-100": "#e5e0df", // lightGray df4996
-        },
         pink: {
           "primary": "#151515", // veryDarkGray
           "secondary": "#222222", // darkGray

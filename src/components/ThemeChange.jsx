@@ -39,16 +39,6 @@ const ThemeChange = () => {
           </button>
         </li>
         <li className="flex items-center gap-1">
-          <div className="badge badge-lg bg-[#c4032a] border-secondary z-20"></div>
-          <button
-            data-set-theme="red"
-            data-act-class="ACTIVECLASS"
-            className="btn btn-ghost w-full relative right-12 z-30 text-neutral hover:opacity-70"
-          >
-            red
-          </button>
-        </li>
-        <li className="flex items-center gap-1">
           <div className="badge badge-lg bg-[#df4996] border-secondary z-20"></div>
           <button
             data-set-theme="pink"
