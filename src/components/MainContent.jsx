@@ -10,7 +10,7 @@ const MainContent = () => {
     const aside = document.querySelector(".aside");
     const navToggle = document.querySelector(".nav-toggle");
     navToggle.classList.toggle("active");
-    aside.classList.toggle("hidden");
+    aside.classList.toggle("active");
   };
 
   return (

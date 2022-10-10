@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 const Aside = () => {
   return (
-    <div className="aside w-72 bg-secondary text-neutral fixed left-0 top-0 h-full z-10 border-r-accent/20 border-r hidden lg:block shadow-lg shadow-white/20">
+    <motion.div
+      layout
+      className="aside transition-all w-72 bg-secondary text-neutral translate-x-[-280px] lg:translate-x-[0] fixed left-0 top-0 h-full z-10 border-r-accent/20 border-r lg:block shadow-lg shadow-white/20"
+    >
       <div className="h-full flex justify-center items-center">
         <motion.div
           className="logo absolute top-12 text-3xl capitalize"
@@ -28,7 +31,7 @@ const Aside = () => {
         </motion.div>
         <Nav />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

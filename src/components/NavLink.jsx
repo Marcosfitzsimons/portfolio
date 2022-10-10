@@ -1,11 +1,5 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import {
-  RiHome4Line,
-  RiBookmark3Line,
-  RiUserHeartLine,
-  RiQuestionAnswerLine,
-} from "react-icons/ri";
 
 const NavLink = ({ navLink, handleClose, setActive, active }) => {
   const handleOnClick = () => {
