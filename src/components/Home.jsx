@@ -98,7 +98,7 @@ const Home = () => {
                 smooth={true}
                 offset={-20}
                 duration={500}
-                className="btn-home btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/80 rounded-md hire-me w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent/80"
+                className="btn-hover btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/80 rounded-md hire-me w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent/80"
               >
                 <span>About me</span>
               </Link>

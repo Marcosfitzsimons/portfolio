@@ -22,11 +22,6 @@ const ThemeChange = () => {
       <div className="open-theme-switcher shadow-md shadow-neutral/20 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center">
         <FaPalette className="text-neutral/80" />
       </div>
-      <div className="type-wrap select-none cursor-default text-neutral/60 text-2xl lg:text-3xl font-secondary-font w-15 rounded-md rounded-tr-none rounded-br-none left-[-8.5rem] lg:left-[-10rem] top-[0.2rem] bg-red absolute hidden lg:flex justify-center items-center">
-        <p className="typed-cursor animate__animated animate__pulse animate__delay-2s">
-          toggle theme
-        </p>
-      </div>
       <ul className="flex flex-col w-full bg-secondary border-2 border-secondary/70 p-3">
         <li className="flex items-center gap-[.4rem]">
           <div className="badge badge-lg bg-[#147b74] border-secondary z-20"></div>

@@ -93,7 +93,7 @@ const About = () => {
                 Languages & Tools I Use:
               </h4>
               <div className="about-skills-container my-4 flex flex-col items-start gap-5">
-                <ul className="about-skills-list flex gap-2 flex-wrap rounded-md p-4 pl-0 w-[90%]">
+                <ul className="about-skills-list flex gap-2 flex-wrap rounded-md p-4 bg-secondary/60">
                   {tools.map((tool) => {
                     return (
                       <li
@@ -119,7 +119,7 @@ const About = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="btn btn-accent w-full sm:w-36 text-neutral"
+                    className="btn-hover btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/80 rounded-md hire-me w-full sm:w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent/80"
                   >
                     Hire Me
                   </Link>
