@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   RiHome4Line,
   RiBookmark3Line,
@@ -7,8 +8,10 @@ import {
 } from "react-icons/ri";
 import { Link, animateScroll as scroll } from "react-scroll";
 
+import NavLink from "./NavLink";
+
 const Nav = () => {
-  // use useState for the link navegation active state.
+  const [active, setActive] = useState(null);
 
   const handleClose = () => {
     const aside = document.querySelector(".aside");
@@ -17,57 +20,51 @@ const Nav = () => {
     navToggle.classList.toggle("active");
   };
 
+  const navLinkData = [
+    {
+      id: 1,
+      text: "Home",
+      to: "home",
+      offset: -70,
+      icon: <RiHome4Line className="text-xl" />,
+    },
+    {
+      id: 2,
+      text: "Projects",
+      to: "portfolio",
+      offset: 0,
+      icon: <RiBookmark3Line className="text-xl" />,
+    },
+    {
+      id: 3,
+      text: "About",
+      to: "about",
+      offset: -20,
+      icon: <RiUserHeartLine className="text-xl" />,
+    },
+    {
+      id: 4,
+      text: "Contact",
+      to: "contact",
+      offset: -70,
+      icon: <RiQuestionAnswerLine className="text-xl" />,
+    },
+  ];
+
   return (
     <nav className="">
       <ul className="nav-list list-none mb-4">
-        <li className="nav-list__item mb-6 block">
-          <Link
-            onClick={handleClose}
-            to="home"
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="cursor-pointer nav-list__link home-link flex items-center gap-3 mt-12 text-xl font-semibold py-2 px-4 border-b border-accent/20"
-          >
-            <RiHome4Line className="text-xl" /> Home
-          </Link>
-        </li>
-        <li className="nav-list__item mb-6 block ">
-          <Link
-            onClick={handleClose}
-            to="portfolio"
-            smooth={true}
-            offset={0}
-            duration={500}
-            className="cursor-pointer nav-list__link portfolio-link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-accent/20"
-          >
-            <RiBookmark3Line className="text-xl" /> Projects
-          </Link>
-        </li>
-        <li className="nav-list__item mb-6 block ">
-          <Link
-            onClick={handleClose}
-            to="about"
-            smooth={true}
-            offset={-20}
-            duration={500}
-            className="cursor-pointer nav-list__link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-accent/20"
-          >
-            <RiUserHeartLine className="text-xl" /> About
-          </Link>
-        </li>
-        <li className="nav-list__item mb-6 block ">
-          <Link
-            onClick={handleClose}
-            to="contact"
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="cursor-pointer nav-list__link flex items-center gap-3 text-xl font-semibold py-2 px-4 border-b border-accent/20"
-          >
-            <RiQuestionAnswerLine className="text-xl" /> Contact
-          </Link>
-        </li>
+        {navLinkData.map((navLink) => {
+          return (
+            <NavLink
+              key={navLink.id}
+              navLink={navLink}
+              handleClose={handleClose}
+              active={active}
+              setActive={setActive}
+            />
+          );
+        })}
       </ul>
     </nav>
   );
