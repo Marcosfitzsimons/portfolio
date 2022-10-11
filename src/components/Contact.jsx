@@ -167,15 +167,15 @@ const Contact = () => {
         <div className="py-4 pt-8 contact-info w-full text-base-100">
           <div className="contact-info-container lg:flex lg:gap-6 lg:justify-center w-full lg:mx-auto">
             <div className="contact-info__location flex py-2 items-center gap-2">
-              <HiOutlineLocationMarker className="text-2xl text-accent/90 hover:text-accent/70 transition-colors" />
+              <HiOutlineLocationMarker className="text-2xl text-accent/90 hover:scale-105 transition-all duration-200" />
               <p className="">Argentina, Buenos Aires</p>
             </div>
             <div className="contact-info__email flex py-2 items-center gap-2">
-              <HiOutlineMail className="text-2xl text-accent/90 hover:text-accent/70 transition-colors" />
+              <HiOutlineMail className="text-2xl text-accent/90 hover:scale-105 transition-all duration-200" />
               <p className="">marcosfitzsimons@gmail.com</p>
             </div>
             <div className="contact-info__languages flex py-2 items-center gap-2">
-              <MdLanguage className="text-2xl text-accent/90 hover:text-accent/70 transition-colors" />
+              <MdLanguage className="text-2xl text-accent/90 hover:scale-105 transition-all duration-200" />
               <p className="">Spanish & English</p>
             </div>
           </div>

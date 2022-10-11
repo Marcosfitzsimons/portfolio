@@ -15,7 +15,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedin className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:translate-y-[-3px] transition-transform" />
+            <FaLinkedin className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
           </a>
         </div>
         <ul className="social-links-list flex items-center gap-3 p-3">
@@ -25,7 +25,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <RiGithubFill className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:translate-y-[-3px] transition-transform" />
+              <RiGithubFill className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
             </a>
           </li>
           <li className="social-link pr-2 border-r border-r-accent/20">
@@ -34,7 +34,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <AiOutlineTwitter className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:translate-y-[-3px] transition-transform" />
+              <AiOutlineTwitter className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
             </a>
           </li>
           <li className="social-link pr-2 border-r border-r-accent/20">
@@ -43,7 +43,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <SiFrontendmentor className="text-xl hover:text-accent/70 text-accent cursor-pointer text-center hover:translate-y-[-3px] transition-transform" />
+              <SiFrontendmentor className="text-xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
             </a>
           </li>
         </ul>
