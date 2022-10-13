@@ -5,17 +5,10 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import NavToggle from "./NavToggle";
 
-const MainContent = () => {
-  const showAside = () => {
-    const aside = document.querySelector(".aside");
-    const navToggle = document.querySelector(".nav-toggle");
-    navToggle.classList.toggle("active");
-    aside.classList.toggle("active");
-  };
-
+const MainContent = ({ isMenu, setIsMenu }) => {
   return (
     <main className="main main-content lg:pl-[280px]">
-      <NavToggle showAside={showAside} />
+      <NavToggle setIsMenu={setIsMenu} isMenu={isMenu} />
       <Home />
       <Portfolio />
       <About />

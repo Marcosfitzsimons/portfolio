@@ -10,15 +10,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import NavLink from "./NavLink";
 
-const Nav = () => {
+const Nav = ({ setIsMenu }) => {
   const [active, setActive] = useState(null);
-
-  const handleClose = () => {
-    const aside = document.querySelector(".aside");
-    const navToggle = document.querySelector(".nav-toggle");
-    aside.classList.toggle("hidden");
-    navToggle.classList.toggle("active");
-  };
 
   const navLinkData = [
     {
@@ -59,9 +52,9 @@ const Nav = () => {
             <NavLink
               key={navLink.id}
               navLink={navLink}
-              handleClose={handleClose}
               active={active}
               setActive={setActive}
+              setIsMenu={setIsMenu}
             />
           );
         })}

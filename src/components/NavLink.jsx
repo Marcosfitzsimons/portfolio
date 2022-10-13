@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const NavLink = ({ navLink, handleClose, setActive, active }) => {
+const NavLink = ({ navLink, setActive, active, setIsMenu }) => {
   const handleOnClick = () => {
-    handleClose();
+    setIsMenu((prevValue) => !prevValue);
     setActive(navLink.text);
   };
   return (

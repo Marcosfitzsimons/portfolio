@@ -94,17 +94,6 @@
     right: 0;
   }
 
-  .aside.active {
-    transform: translateX(0);
-  }
-
-  .nav-toggle.active {
-    left: 18rem;
-    box-shadow: none;
-    top: 0rem;
-    border: none;
-  }
-
   .nav-list__link.active {
     color: var(--accent);
     transition: 0.2s ease-in;

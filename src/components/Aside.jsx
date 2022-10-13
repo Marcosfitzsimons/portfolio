@@ -3,11 +3,13 @@ import Nav from "./Nav";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
-const Aside = () => {
+const Aside = ({ isMenu, setIsMenu }) => {
   return (
     <motion.div
       layout
-      className="aside transition-all w-72 bg-secondary text-neutral translate-x-[-280px] lg:translate-x-[0] fixed left-0 top-0 h-full z-10 border-r-accent/20 border-r lg:block shadow-lg shadow-white/20"
+      className={`${
+        !isMenu && "translate-x-[0]"
+      } transition-all w-72 bg-secondary text-neutral translate-x-[-280px] lg:translate-x-[0] fixed left-0 top-0 h-full z-10 border-r-accent/20 border-r lg:block shadow-lg shadow-white/20`}
     >
       <div className="h-full flex justify-center items-center">
         <motion.div
@@ -29,7 +31,7 @@ const Aside = () => {
             arcos
           </Link>
         </motion.div>
-        <Nav />
+        <Nav setIsMenu={setIsMenu} />
       </div>
     </motion.div>
   );
