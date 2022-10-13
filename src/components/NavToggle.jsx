@@ -11,8 +11,10 @@ const NavToggle = ({ setIsMenu, isMenu }) => {
     <div
       onClick={handleOnClick}
       className={`${
-        !isMenu && "left-[17.9rem] top-[0] rounded-l-none shadow-sm"
-      } transition-all shadow-md shadow-neutral/10 flex flex-col gap-1 items-center justify-center z-20 h-10 w-11 fixed left-7 top-8 rounded-md bg-secondary cursor-pointer lg:hidden`}
+        !isMenu
+          ? "left-[17.9rem] top-[0] rounded-l-none shadow-sm"
+          : "left-7 top-8 shadow-md"
+      } transition-all shadow-neutral/10 flex flex-col gap-1 items-center justify-center z-20 h-10 w-11 fixed rounded-md bg-secondary cursor-pointer lg:hidden`}
     >
       {isMenu ? (
         <RiMenu2Fill className="text-accent text-2xl" />

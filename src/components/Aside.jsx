@@ -8,8 +8,8 @@ const Aside = ({ isMenu, setIsMenu }) => {
     <motion.div
       layout
       className={`${
-        !isMenu && "translate-x-[0]"
-      } transition-all w-72 bg-secondary text-neutral translate-x-[-280px] lg:translate-x-[0] fixed left-0 top-0 h-full z-10 border-r-accent/20 border-r lg:block shadow-lg shadow-white/20`}
+        !isMenu ? "translate-x-[0]" : "translate-x-[-280px]"
+      } transition-all w-72 bg-secondary text-neutral lg:translate-x-[0] fixed left-0 top-0 h-full z-10 border-r-accent/20 border-r lg:block shadow-lg shadow-white/20`}
     >
       <div className="h-full flex justify-center items-center">
         <motion.div
