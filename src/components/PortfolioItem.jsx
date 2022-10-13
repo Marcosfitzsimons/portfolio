@@ -52,12 +52,26 @@ const PortfolioItem = ({ project }) => {
               initial="hidden"
               animate="show"
             >
-              <h4 className="text-sm">Languages & Tools I Used:</h4>
-              <ul>
-                {project.tools.map((tool) => {
-                  return <li key={tool.id}>{tool.icon}</li>;
-                })}
-              </ul>
+              <p className="text-sm">
+                <span className="text-xs uppercase rounded-sm text-accent font-bold pt-[.1rem] px-1 pr-2">
+                  Description:
+                </span>
+                {project.description}
+              </p>
+              <div className="flex gap-1">
+                <p className="text-xs uppercase rounded-sm text-accent font-bold pt-[.1rem] px-1">
+                  Stack:
+                </p>
+                <ul className="flex gap-1">
+                  {project.stack.map((tool, index) => {
+                    return (
+                      <li className="text-sm" key={index}>
+                        {tool}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </motion.div>
           )}
         </div>

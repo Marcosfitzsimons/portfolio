@@ -9,11 +9,6 @@ import projectTodoImg from "../assets/project-todo-app.webp";
 import projectEasybankImg from "../assets/project-easybank.webp";
 import PortfolioItem from "./PortfolioItem";
 import { RiGithubFill } from "react-icons/ri";
-import { TiHtml5 } from "react-icons/ti";
-import { IoLogoCss3 } from "react-icons/io";
-import { TbBrandJavascript } from "react-icons/tb";
-import { SiTailwindcss } from "react-icons/si";
-import { DiReact } from "react-icons/di";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
@@ -28,24 +23,9 @@ const Portfolio = () => {
       liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
       title: "Todo React App",
-      tools: [
-        {
-          id: 1,
-          icon: <TiHtml5 />,
-        },
-        {
-          id: 2,
-          icon: <IoLogoCss3 />,
-        },
-        {
-          id: 3,
-          icon: <TbBrandJavascript />,
-        },
-        {
-          id: 4,
-          icon: <DiReact />,
-        },
-      ],
+      stack: ["React, ", "TailwindCSS"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
     {
       id: 2,
@@ -53,24 +33,9 @@ const Portfolio = () => {
       liveSiteUrl: "https://bookmark-react-app.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/bookmark-react-app",
       title: "Bookmark React App",
-      tools: [
-        {
-          id: 1,
-          icon: <TiHtml5 />,
-        },
-        {
-          id: 2,
-          icon: <IoLogoCss3 />,
-        },
-        {
-          id: 3,
-          icon: <TbBrandJavascript />,
-        },
-        {
-          id: 4,
-          icon: <DiReact />,
-        },
-      ],
+      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
     {
       id: 3,
@@ -79,24 +44,9 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/calculator-app-w-react",
       title: "Calculator React App",
-      tools: [
-        {
-          id: 1,
-          icon: <TiHtml5 />,
-        },
-        {
-          id: 2,
-          icon: <IoLogoCss3 />,
-        },
-        {
-          id: 3,
-          icon: <TbBrandJavascript />,
-        },
-        {
-          id: 4,
-          icon: <DiReact />,
-        },
-      ],
+      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
     {
       id: 4,
@@ -104,24 +54,9 @@ const Portfolio = () => {
       liveSiteUrl: "https://advice-generator-app-eight.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/advice-generator-app",
       title: "Advice Generator App",
-      tools: [
-        {
-          id: 1,
-          icon: <TiHtml5 />,
-        },
-        {
-          id: 2,
-          icon: <IoLogoCss3 />,
-        },
-        {
-          id: 3,
-          icon: <TbBrandJavascript />,
-        },
-        {
-          id: 4,
-          icon: <DiReact />,
-        },
-      ],
+      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
     {
       id: 5,
@@ -131,24 +66,9 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher",
       title: "Social Media Dashboard",
-      tools: [
-        {
-          id: 1,
-          icon: <TiHtml5 />,
-        },
-        {
-          id: 2,
-          icon: <IoLogoCss3 />,
-        },
-        {
-          id: 3,
-          icon: <TbBrandJavascript />,
-        },
-        {
-          id: 4,
-          icon: <DiReact />,
-        },
-      ],
+      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
     {
       id: 6,
@@ -157,24 +77,9 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/crowdfunding-product-page",
       title: "Crowdfund Product Page",
-      tools: [
-        {
-          id: 1,
-          icon: <TiHtml5 />,
-        },
-        {
-          id: 2,
-          icon: <IoLogoCss3 />,
-        },
-        {
-          id: 3,
-          icon: <TbBrandJavascript />,
-        },
-        {
-          id: 4,
-          icon: <DiReact />,
-        },
-      ],
+      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
     {
       id: 7,
@@ -183,24 +88,9 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind",
       title: "Chat App Css Illustration",
-      tools: [
-        {
-          id: 1,
-          icon: <TiHtml5 />,
-        },
-        {
-          id: 2,
-          icon: <IoLogoCss3 />,
-        },
-        {
-          id: 3,
-          icon: <TbBrandJavascript />,
-        },
-        {
-          id: 4,
-          icon: <DiReact />,
-        },
-      ],
+      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
     {
       id: 8,
@@ -209,24 +99,9 @@ const Portfolio = () => {
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/easybank-landing-page",
       title: "Easybank Landing Page",
-      tools: [
-        {
-          id: 1,
-          icon: <TiHtml5 />,
-        },
-        {
-          id: 2,
-          icon: <IoLogoCss3 />,
-        },
-        {
-          id: 3,
-          icon: <TbBrandJavascript />,
-        },
-        {
-          id: 4,
-          icon: <DiReact />,
-        },
-      ],
+      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
   ];
 
