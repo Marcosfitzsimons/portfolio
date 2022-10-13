@@ -30,7 +30,7 @@ module.exports = {
         indigo: {
           "primary": "#151515", // veryDarkGray
           "secondary": "#222222", // darkGray
-          "accent": "#4338ca", // themeColor
+          "accent": "#818cf8", // themeColor
           "neutral": "#f8fffe", // veryLightGray
           "base-100": "#e5e0df", // lightGray df4996
         },

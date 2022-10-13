@@ -15,7 +15,7 @@
     --homeImg: url("./assets/developer-pink.webp");
   }
   [data-theme="indigo"] {
-    --accent: #4338ca;
+    --accent: #818cf8;
     --homeImg: url("./assets/developer-cyan.svg");
   }
   [data-theme="yellow"] {

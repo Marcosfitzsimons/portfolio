@@ -44,7 +44,7 @@ const ThemeChange = () => {
           </button>
         </li>
         <li className="flex items-center gap-[.4rem]">
-          <div className="badge badge-lg bg-[#4338ca] border-secondary z-20"></div>
+          <div className="badge badge-lg bg-[#818cf8] border-secondary z-20"></div>
           <button
             data-set-theme="indigo"
             data-act-class="ACTIVECLASS"
