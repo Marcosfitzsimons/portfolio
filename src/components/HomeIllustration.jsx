@@ -20,9 +20,7 @@ const HomeIllustration = () => {
       variants={homeIllustrationVariants}
       initial="hidden"
       animate="visible"
-    >
-      <div className="home-illustration-bg h-[380px] max-w-[491px] m-auto"></div>
-    </motion.div>
+    ></motion.div>
   );
 };
 

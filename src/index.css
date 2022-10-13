@@ -45,27 +45,6 @@
     margin: auto;
   }
 
-  .home__illustration::after {
-    content: "";
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--accent);
-    border-right: 10px solid var(--accent);
-    right: -10px;
-    bottom: -40px;
-  }
-  .home__illustration::before {
-    content: "";
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--accent);
-    border-left: 10px solid var(--accent);
-    left: -20px;
-    top: -40px;
-  }
-
   .home-illustration-bg {
     background-image: var(--homeImg);
     background-position: center center;
