@@ -1,12 +1,12 @@
 import React from "react";
 import projectBookmarkImg from "../assets/project-bookmark.webp";
 import projectCalculatorImg from "../assets/project-calculator.webp";
-import projectAdviceImg from "../assets/project-advice.webp";
+import projectEcommerce from "../assets/project-ecommerce.webp";
 import projectDashboardImg from "../assets/project-dashboard.webp";
 import projectCrowfundingImg from "../assets/project-crowdfunding.webp";
 import projectIllustrationImg from "../assets/project-illustration.webp";
 import projectTodoImg from "../assets/project-todo-app.webp";
-import projectEasybankImg from "../assets/project-easybank.webp";
+import projectJobListings from "../assets/project-job-listings.webp";
 import PortfolioItem from "./PortfolioItem";
 import { RiGithubFill } from "react-icons/ri";
 import { useRef } from "react";
@@ -19,23 +19,25 @@ const Portfolio = () => {
   const projectsData = [
     {
       id: 1,
-      image: projectTodoImg,
-      liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
-      repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
-      title: "Todo React App",
+      image: projectEcommerce,
+      liveSiteUrl: "https://ecommerce-product-page-coral-nine.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/ecommerce-product-page",
+      title: "Ecommerce Product Page",
       stack: ["React, ", "TailwindCSS"],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
+        "Ecommerce product page that allows the user to add items to and remove them from the cart, as well as change the large product image by clicking on small thumbnail images.",
     },
     {
       id: 2,
-      image: projectBookmarkImg,
-      liveSiteUrl: "https://bookmark-react-app.vercel.app/",
-      repositoryUrl: "https://github.com/Marcosfitzsimons/bookmark-react-app",
-      title: "Bookmark React App",
-      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      image: projectJobListings,
+      liveSiteUrl: "https://job-listings-w-filtering.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/job-listings-w-filtering",
+      title: "Job Listings w. Filtering",
+      stack: ["React, ", "TailwindCSS"],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
+        "Filter job listings based on the categories (Role, Level, Languages, Tools). To add a filter, the user needs to click on the tablets.",
     },
     {
       id: 3,
@@ -50,11 +52,11 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      image: projectAdviceImg,
-      liveSiteUrl: "https://advice-generator-app-eight.vercel.app/",
-      repositoryUrl: "https://github.com/Marcosfitzsimons/advice-generator-app",
-      title: "Advice Generator App",
-      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      image: projectTodoImg,
+      liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
+      title: "Todo React App",
+      stack: ["React, ", "TailwindCSS"],
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
     },
@@ -94,11 +96,10 @@ const Portfolio = () => {
     },
     {
       id: 8,
-      image: projectEasybankImg,
-      liveSiteUrl: "https://easybank-landing-page-alpha-seven.vercel.app/",
-      repositoryUrl:
-        "https://github.com/Marcosfitzsimons/easybank-landing-page",
-      title: "Easybank Landing Page",
+      image: projectBookmarkImg,
+      liveSiteUrl: "https://bookmark-react-app.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/bookmark-react-app",
+      title: "Bookmark React App",
       stack: ["Javascript, ", "React, ", "TailwindCSS"],
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",

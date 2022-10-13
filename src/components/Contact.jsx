@@ -7,6 +7,7 @@ import { MdLanguage } from "react-icons/md";
 import { useRef } from "react";
 import Footer from "./Footer";
 import { useInView } from "framer-motion";
+import "animate.css";
 
 const Contact = () => {
   const [errorMsg, setErrorMsg] = useState(false);
@@ -117,8 +118,8 @@ const Contact = () => {
                 </div>
               </div>
               {errorMsg && (
-                <div className="row w-full">
-                  <div className="alert alert-error shadow-lg bg-transparent text-[#c4032a] px-0 relative bottom-4">
+                <div className="animate__animated animate__fadeIn row w-full">
+                  <div className="alert alert-error shadow-lg bg-secondary/50 mt-2 text-[#c4032a] px-4 relative bottom-4">
                     <div className="">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

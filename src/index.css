@@ -7,20 +7,15 @@
 @layer base {
   :root {
     --accent: #115e59;
-    --homeImg: url("./assets/developer-default.webp");
-    /* or any other variables/style */
   }
   [data-theme="pink"] {
     --accent: #db2777;
-    --homeImg: url("./assets/developer-pink.webp");
   }
   [data-theme="indigo"] {
     --accent: #818cf8;
-    --homeImg: url("./assets/developer-cyan.svg");
   }
   [data-theme="yellow"] {
     --accent: #eab308;
-    --homeImg: url("./assets/developer-gold1.svg");
   }
 
   body {
