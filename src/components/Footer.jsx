@@ -14,6 +14,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/marcos-fitzsimons-70a010208/"
             target="_blank"
             rel="noreferrer"
+            aria-label="See my LinkedIn account"
           >
             <FaLinkedin className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
           </a>
@@ -24,17 +25,9 @@ const Footer = () => {
               href="https://github.com/Marcosfitzsimons"
               target="_blank"
               rel="noreferrer"
+              aria-label="See my GitHub account"
             >
               <RiGithubFill className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
-            </a>
-          </li>
-          <li className="social-link pr-2 border-r border-r-accent/20">
-            <a
-              href="https://twitter.com/Marcossf98"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiOutlineTwitter className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
             </a>
           </li>
           <li className="social-link pr-2 border-r border-r-accent/20">
@@ -42,6 +35,7 @@ const Footer = () => {
               href="https://www.frontendmentor.io/profile/Marcosfitzsimons"
               target="_blank"
               rel="noreferrer"
+              aria-label="See my FrontendMentor account"
             >
               <SiFrontendmentor className="text-xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
             </a>

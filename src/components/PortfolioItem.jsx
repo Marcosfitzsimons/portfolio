@@ -29,7 +29,7 @@ const PortfolioItem = ({ project }) => {
         <div className="portfolio-img-container overflow-hidden relative border-[1px] p-1 border-accent/70 rounded-xl hover:border-accent">
           <img
             src={project.image}
-            alt="-"
+            alt={project.title}
             className="w-full z-90 max-h-[200px] rounded-lg"
           />
         </div>
@@ -82,6 +82,7 @@ const PortfolioItem = ({ project }) => {
               target="_blank"
               rel="noreferrer"
               className="select-none font-medium text-center text-sm flex items-center justify-center text-neutral w-[5.9rem] h-[2rem]"
+              aria-label={`See the live server of ${project.title}`}
             >
               Live server
             </a>
@@ -92,6 +93,7 @@ const PortfolioItem = ({ project }) => {
               target="_blank"
               rel="noreferrer"
               className="select-none font-medium text-center text-sm flex items-center justify-center leading-4 text-neutral w-[5.9rem] h-[2rem]"
+              aria-label={`See the GitHub repository of ${project.title}`}
             >
               Github repository
             </a>
