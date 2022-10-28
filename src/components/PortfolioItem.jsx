@@ -10,9 +10,7 @@ const PortfolioItem = ({ project }) => {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.5,
-      },
+      transition: { ease: "easeInOut" },
     },
   };
 
@@ -22,11 +20,11 @@ const PortfolioItem = ({ project }) => {
 
   return (
     <motion.article className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative origin-center hover:origin-bottom hover:-translate-y-1 transition-all duration-200 align-middle">
-      <div className="portfolio-title-container absolute bg-accent/5 left-[2.2rem] w-[12.5rem] text-center top-[-1.7rem] px-2 t p-1 py-2 rounded-md transition-colors select-none">
+      <div className="portfolio-title-container absolute bg-accent/5 left-[2.2rem] w-[12.5rem] text-center top-[-1.7rem] px-2 t p-1 py-2 rounded-md select-none">
         <h5 className="portfolio-title text-sm">{project.title}</h5>
       </div>
       <div className="portfolio-item-inner">
-        <div className="portfolio-img-container overflow-hidden relative border-[1px] p-1 border-accent/70 rounded-xl hover:border-accent">
+        <div className="portfolio-img-container relative overflow-hidden p-1 border-[1px] border-transparent rounded-xl hover:border-[1px] hover:border-accent transition ease-in-out duration-300">
           <img
             src={project.image}
             alt={project.title}
