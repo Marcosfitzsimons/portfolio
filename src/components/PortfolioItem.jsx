@@ -60,7 +60,7 @@ const PortfolioItem = ({ project }) => {
                 <p className="text-xs uppercase rounded-sm text-accent font-bold pt-[.1rem] px-1">
                   Stack:
                 </p>
-                <ul className="flex gap-1">
+                <ul className="flex gap-1 flex-wrap">
                   {project.stack.map((tool, index) => {
                     return (
                       <li className="text-sm" key={index}>

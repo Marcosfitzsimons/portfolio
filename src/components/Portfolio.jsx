@@ -2,7 +2,7 @@ import React from "react";
 import projectBookmarkImg from "../assets/project-bookmark.webp";
 import projectCalculatorImg from "../assets/project-calculator.webp";
 import projectEcommerce from "../assets/project-ecommerce.webp";
-import projectDashboardImg from "../assets/project-dashboard.webp";
+import projectSpaceTourismImg from "../assets/project-space-tourism.webp";
 import projectCrowfundingImg from "../assets/project-crowdfunding.webp";
 import projectIllustrationImg from "../assets/project-illustration.webp";
 import projectTodoImg from "../assets/project-todo-app.webp";
@@ -62,15 +62,14 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      image: projectDashboardImg,
-      liveSiteUrl:
-        "https://social-media-dashboard-w-theme-switcher.vercel.app/",
+      image: projectSpaceTourismImg,
+      liveSiteUrl: "https://space-tourism-website-lyart.vercel.app/",
       repositoryUrl:
-        "https://github.com/Marcosfitzsimons/social-media-dashboard-w-theme-switcher",
-      title: "Social Media Dashboard",
-      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+        "https://github.com/Marcosfitzsimons/space-tourism-website",
+      title: "Space Tourism Website",
+      stack: ["React, ", "TailwindCSS, ", "Framer Motion"],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
+        "Space tourism multi-page website, good to practice my css skills, react-router-dom v6.3, animations between pages and also accessibility.",
     },
     {
       id: 6,
