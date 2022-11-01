@@ -4,7 +4,7 @@ import projectCalculatorImg from "../assets/project-calculator.webp";
 import projectEcommerce from "../assets/project-ecommerce.webp";
 import projectSpaceTourismImg from "../assets/project-space-tourism.webp";
 import projectCrowfundingImg from "../assets/project-crowdfunding.webp";
-import projectIllustrationImg from "../assets/project-illustration.webp";
+import projectAdvice from "../assets/project-advice.webp";
 import projectTodoImg from "../assets/project-todo-app.webp";
 import projectJobListings from "../assets/project-job-listings.webp";
 import PortfolioItem from "./PortfolioItem";
@@ -41,27 +41,6 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      image: projectCalculatorImg,
-      liveSiteUrl: "https://calculator-app-w-react.vercel.app/",
-      repositoryUrl:
-        "https://github.com/Marcosfitzsimons/calculator-app-w-react",
-      title: "Calculator React App",
-      stack: ["Javascript, ", "React, ", "TailwindCSS"],
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
-    },
-    {
-      id: 4,
-      image: projectTodoImg,
-      liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
-      repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
-      title: "Todo React App",
-      stack: ["React, ", "TailwindCSS"],
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
-    },
-    {
-      id: 5,
       image: projectSpaceTourismImg,
       liveSiteUrl: "https://space-tourism-website-lyart.vercel.app/",
       repositoryUrl:
@@ -72,26 +51,46 @@ const Portfolio = () => {
         "Space tourism multi-page website, good to practice my css skills, react-router-dom v6.3, animations between pages and also accessibility.",
     },
     {
+      id: 4,
+      image: projectTodoImg,
+      liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
+      title: "Todo React App",
+      stack: ["React, ", "TailwindCSS"],
+      description:
+        "Todo App that allows users to add new todos to the list, mark todos as complete, delete todos from the list, filter by all/active/complete...",
+    },
+    {
+      id: 5,
+      image: projectCalculatorImg,
+      liveSiteUrl: "https://calculator-app-w-react.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/calculator-app-w-react",
+      title: "Calculator React App",
+      stack: ["React, ", "CSS"],
+      description:
+        "A calculator made with react that allows to do basic mathematical operations.",
+    },
+    {
       id: 6,
       image: projectCrowfundingImg,
       liveSiteUrl: "https://crowdfunding-product-page-ivory.vercel.app/",
       repositoryUrl:
         "https://github.com/Marcosfitzsimons/crowdfunding-product-page",
       title: "Crowdfund Product Page",
-      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      stack: ["HTML, ", "CSS, ", "Javascript"],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
+        "Crowdfunding product page, project in which I could practice my skills with css and some javascript.",
     },
     {
       id: 7,
-      image: projectIllustrationImg,
-      liveSiteUrl: "https://chat-app-illustration-five.vercel.app/",
-      repositoryUrl:
-        "https://github.com/Marcosfitzsimons/chat-app-css-illustration-w-tailwind",
-      title: "Chat App Css Illustration",
-      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      image: projectAdvice,
+      liveSiteUrl: "https://advice-generator-app-eight.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/advice-generator-app",
+      title: "Advice Generator App",
+      stack: ["HTML, ", "CSS, ", "Javascript"],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
+        "A simple advice generator app that allows users to generate a new piece of advice by clicking the dice icon",
     },
     {
       id: 8,
@@ -99,9 +98,9 @@ const Portfolio = () => {
       liveSiteUrl: "https://bookmark-react-app.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/bookmark-react-app",
       title: "Bookmark React App",
-      stack: ["Javascript, ", "React, ", "TailwindCSS"],
+      stack: ["React, ", "TailwindCSS, ", "DaisyUI"],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officiis, accusamus itaque soluta eligendi ipsam.",
+        "Bookmark app, project in which I was able to practice my layout skills. I was also able to learn how to use some DaisyUI components.",
     },
   ];
 
