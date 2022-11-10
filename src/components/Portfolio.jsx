@@ -3,7 +3,7 @@ import projectBookmarkImg from "../assets/project-bookmark.webp";
 import projectCalculatorImg from "../assets/project-calculator.webp";
 import projectEcommerce from "../assets/project-ecommerce.webp";
 import projectSpaceTourismImg from "../assets/project-space-tourism.webp";
-import projectCrowfundingImg from "../assets/project-crowdfunding.webp";
+import projectPaisaflixImg from "../assets/project-paisaflix.webp";
 import projectAdvice from "../assets/project-advice.webp";
 import projectTodoImg from "../assets/project-todo-app.webp";
 import projectJobListings from "../assets/project-job-listings.webp";
@@ -30,14 +30,13 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      image: projectJobListings,
-      liveSiteUrl: "https://job-listings-w-filtering.vercel.app/",
-      repositoryUrl:
-        "https://github.com/Marcosfitzsimons/job-listings-w-filtering",
-      title: "Job Listings w. Filtering",
-      stack: ["React, ", "TailwindCSS"],
+      image: projectPaisaflixImg,
+      liveSiteUrl: "https://paisaflix-challenge.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/paisaflix-challenge",
+      title: "Paisaflix - Movie Page",
+      stack: ["NextJS, ", "React, ", "TailwindCSS"],
       description:
-        "Filter job listings based on the categories (Role, Level, Languages, Tools). To add a filter, the user needs to click on the tablets.",
+        "Paisaflix, my first Next.js 13 project in which I was able to practice the new features such as App dir, routing, loading UI, server and client components as well as my css skills.",
     },
     {
       id: 3,
@@ -73,14 +72,14 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      image: projectCrowfundingImg,
-      liveSiteUrl: "https://crowdfunding-product-page-ivory.vercel.app/",
+      image: projectJobListings,
+      liveSiteUrl: "https://job-listings-w-filtering.vercel.app/",
       repositoryUrl:
-        "https://github.com/Marcosfitzsimons/crowdfunding-product-page",
-      title: "Crowdfund Product Page",
-      stack: ["HTML, ", "CSS, ", "Javascript"],
+        "https://github.com/Marcosfitzsimons/job-listings-w-filtering",
+      title: "Job Listings w. Filtering",
+      stack: ["React, ", "TailwindCSS"],
       description:
-        "Crowdfunding product page, project in which I could practice my skills with css and some javascript.",
+        "Filter job listings based on the categories (Role, Level, Languages, Tools). To add a filter, the user needs to click on the tablets.",
     },
     {
       id: 7,
