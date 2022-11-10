@@ -17,7 +17,11 @@ const About = () => {
     },
     {
       id: uuidv4(),
-      name: "React",
+      name: "ReactJS",
+    },
+    {
+      id: uuidv4(),
+      name: "NextJS",
     },
     {
       id: uuidv4(),
