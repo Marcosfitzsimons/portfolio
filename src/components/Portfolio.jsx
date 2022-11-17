@@ -6,7 +6,7 @@ import projectSpaceTourismImg from "../assets/project-space-tourism.webp";
 import projectPaisaflixImg from "../assets/project-paisaflix.webp";
 import projectAdvice from "../assets/project-advice.webp";
 import projectTodoImg from "../assets/project-todo-app.webp";
-import projectJobListings from "../assets/project-job-listings.webp";
+import projectHoobank from "../assets/project-hoobank.webp";
 import PortfolioItem from "./PortfolioItem";
 import { RiGithubFill } from "react-icons/ri";
 import { useRef } from "react";
@@ -34,7 +34,7 @@ const Portfolio = () => {
       liveSiteUrl: "https://paisaflix-challenge.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/paisaflix-challenge",
       title: "Paisaflix - Movie Page",
-      stack: ["NextJS, ", "React, ", "TailwindCSS"],
+      stack: ["Next, ", "React, ", "TailwindCSS"],
       description:
         "Paisaflix, my first Next.js 13 project in which I was able to practice the new features such as App dir, routing, loading UI, server and client components as well as my css skills.",
     },
@@ -72,14 +72,13 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      image: projectJobListings,
-      liveSiteUrl: "https://job-listings-w-filtering.vercel.app/",
-      repositoryUrl:
-        "https://github.com/Marcosfitzsimons/job-listings-w-filtering",
-      title: "Job Listings w. Filtering",
-      stack: ["React, ", "TailwindCSS"],
+      image: projectHoobank,
+      liveSiteUrl: "https://hoobank-page.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/hoobank-page",
+      title: "Hoobank App",
+      stack: ["Next, ", "React, ", "TailwindCSS, ", "Framer Motion"],
       description:
-        "Filter job listings based on the categories (Role, Level, Languages, Tools). To add a filter, the user needs to click on the tablets.",
+        "Project in which I was able to gain more familiarity with Next, practice my layout skills and nicely animate each section with Framer Motion.",
     },
     {
       id: 7,
