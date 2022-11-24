@@ -23,11 +23,11 @@
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-    background-color: #151515;
+    background-color: #0e1217;
   }
 
   .section {
-    background-color: #151515;
+    background-color: #0e1217;
     min-height: 100vh;
     display: block;
     z-index: 0;
