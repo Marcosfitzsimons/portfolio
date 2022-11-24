@@ -1,5 +1,5 @@
 import React from "react";
-import { RiMenu2Fill } from "react-icons/ri";
+import { TbMenu2 } from "react-icons/tb";
 import { BsChevronDoubleLeft } from "react-icons/bs";
 import "animate.css";
 
@@ -11,15 +11,13 @@ const NavToggle = ({ setIsMenu, isMenu }) => {
     <div
       onClick={handleOnClick}
       className={`${
-        !isMenu
-          ? "left-[17.9rem] top-[0] rounded-l-none shadow-sm"
-          : "left-7 top-8 shadow-md"
-      } transition-all shadow-neutral/10 flex flex-col gap-1 items-center justify-center z-20 h-10 w-11 fixed rounded-md bg-secondary cursor-pointer lg:hidden`}
+        !isMenu ? "left-[17.9rem] top-[0] rounded-l-none" : "left-7 top-8"
+      } transition-all text-slate-300/90  bg-slate-100/5  flex flex-col items-center justify-center z-20 h-10 w-11 fixed rounded-lg cursor-pointer hover:bg-slate-300/10 hover:text-white lg:hidden`}
     >
       {isMenu ? (
-        <RiMenu2Fill className="text-accent text-2xl" />
+        <TbMenu2 className="text-2xl" />
       ) : (
-        <BsChevronDoubleLeft className="text-accent text-2xl" />
+        <BsChevronDoubleLeft className="text-2xl" />
       )}
     </div>
   );
