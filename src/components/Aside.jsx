@@ -9,7 +9,7 @@ const Aside = ({ isMenu, setIsMenu }) => {
       layout
       className={`${
         !isMenu ? "translate-x-[0]" : "translate-x-[-280px]"
-      } aside transition-all w-72 bg-secondary text-neutral lg:translate-x-[0] fixed left-0 top-0 h-full z-30 border-r-accent/20 border-r lg:block shadow-lg shadow-white/20`}
+      } aside z-30 bg-[#15161b] transition-all w-72 text-neutral lg:translate-x-[0] fixed left-0 top-0 h-full border-r-accent/20 border-r lg:block shadow-lg shadow-white/20`}
     >
       <div className="h-full flex justify-center items-center">
         <motion.div
@@ -22,7 +22,8 @@ const Aside = ({ isMenu, setIsMenu }) => {
             to="home"
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={800}
+            onClick={() => setIsMenu((prevValue) => !prevValue)}
             className="logo-link font-bold py-4 px-5 text-3xl tracking-[5px] relative cursor-pointer"
           >
             <span className="text-accent font-secondary-font text-[40px]">
