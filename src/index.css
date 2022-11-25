@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --accent: #115e59;
+    --accent: #0d9488;
   }
   [data-theme="pink"] {
     --accent: #db2777;

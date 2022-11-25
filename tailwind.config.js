@@ -16,7 +16,7 @@ module.exports = {
         default: {
           "primary": "#151515", // veryDarkGray
           "secondary": "#222222", // darkGray
-          "accent": "#147B74", // themeColor
+          "accent": "#0d9488", // themeColor
           "neutral": "#f8fffe", // veryLightGray
           "base-100": "#e5e0df", // lightGray
         },

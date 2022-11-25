@@ -17,14 +17,14 @@ const ThemeChange = () => {
   return (
     <div
       onClick={showThemeSwitcher}
-      className="animate__animated animate__zoomInRight animate__delay-1s theme-switcher w-[10rem] fixed right-[-9.5rem] top-8 rounded-lg shadow-md shadow-accent/10 cursor-pointer transition-all z-50"
+      className="theme-switcher w-[10rem] fixed right-[-9.5rem] top-8 rounded-lg shadow-md shadow-accent/10 cursor-pointer transition-all z-50"
     >
       <div className="open-theme-switcher shadow-md shadow-neutral/20 w-10 h-10 rounded-md rounded-tr-none rounded-br-none left-[-2.5rem] top-0 z-40 bg-red absolute flex justify-center items-center">
         <FaPalette className="text-neutral/80" />
       </div>
       <ul className="flex flex-col w-full border-2 border-secondary/40 border-t-0 p-3 rounded-bl-lg bg-primary z-50">
         <li className="flex items-center gap-[.4rem] hover:scale-105 transition-transform">
-          <div className="badge badge-lg bg-[#147b74] border-secondary z-20"></div>
+          <div className="badge badge-lg bg-[#0d9488] border-secondary z-20"></div>
           <button
             data-set-theme="default"
             data-act-class="ACTIVECLASS"
