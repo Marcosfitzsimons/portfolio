@@ -84,6 +84,7 @@
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }
+
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
@@ -94,10 +95,6 @@
     100% {
       background-position: 0% 50%;
     }
-  }
-  .theme-switcher.active {
-    right: 0;
-    z-index: 90;
   }
 
   .btn-hover:after {
