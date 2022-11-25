@@ -14,33 +14,6 @@ const ThemeChange = () => {
     themeChange(false);
   }, []);
 
-  const colors = [
-    {
-      id: 1,
-      badgeColor: "#0d9488",
-      dataSetTheme: "default",
-      text: "emerald",
-    },
-    {
-      id: 2,
-      badgeColor: "#df4996",
-      dataSetTheme: "pink",
-      text: "pink",
-    },
-    {
-      id: 3,
-      badgeColor: "#818cf8",
-      dataSetTheme: "indigo",
-      text: "indigo",
-    },
-    {
-      id: 4,
-      badgeColor: "#EAB308",
-      dataSetTheme: "yellow",
-      text: "gold",
-    },
-  ];
-
   return (
     <div
       onClick={handleIsShown}
@@ -52,23 +25,46 @@ const ThemeChange = () => {
         <FaPalette className="text-neutral/80" />
       </div>
       <ul className="flex flex-col w-full py-3 px-1 pr-2 rounded-bl-lg bg-secondary z-50">
-        {colors.map((color) => (
-          <li
-            className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60"
-            key={color.id}
+        <li className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60">
+          <div className={`badge badge-lg bg-[#0d9488] border-secondary`}></div>
+          <button
+            data-set-theme="default"
+            data-act-class="ACTIVECLASS"
+            className="w-full text-start uppercase tracking-wide text-sm lg:text-base"
           >
-            <div
-              className={`badge badge-lg bg-[${color.badgeColor}] border-secondary`}
-            ></div>
-            <button
-              data-set-theme={color.dataSetTheme}
-              data-act-class="ACTIVECLASS"
-              className="w-full text-start uppercase tracking-wide"
-            >
-              {color.text}
-            </button>
-          </li>
-        ))}
+            emerald
+          </button>
+        </li>
+        <li className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60">
+          <div className={`badge badge-lg bg-[#df4996] border-secondary`}></div>
+          <button
+            data-set-theme="pink"
+            data-act-class="ACTIVECLASS"
+            className="w-full text-start uppercase tracking-wide text-sm lg:text-base"
+          >
+            pink
+          </button>
+        </li>
+        <li className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60">
+          <div className={`badge badge-lg bg-[#818cf8] border-secondary`}></div>
+          <button
+            data-set-theme="indigo"
+            data-act-class="ACTIVECLASS"
+            className="w-full text-start uppercase tracking-wide text-sm lg:text-base"
+          >
+            indigo
+          </button>
+        </li>
+        <li className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60">
+          <div className={`badge badge-lg bg-[#EAB308] border-secondary`}></div>
+          <button
+            data-set-theme="yellow"
+            data-act-class="ACTIVECLASS"
+            className="w-full text-start uppercase tracking-wide text-sm lg:text-base"
+          >
+            gold
+          </button>
+        </li>
       </ul>
     </div>
   );
