@@ -3,6 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { useInView } from "framer-motion";
+import cv from "../assets/cv-marcos-fitzsimons.pdf";
 
 // Linkedin - Let's connect, my chat is open if you wanna talk. ?
 // Cv - Learn a bit more about me and my experience. ?
@@ -109,21 +110,21 @@ const About = () => {
                     );
                   })}
                 </ul>
-                <div className="about-buttons-container flex flex-col w-full sm:w-auto sm:flex-row gap-5 my-5">
-                  <div className="indicator w-full sm:w-36 opacity-90">
-                    <span className="indicator-item badge hidden sm:flex sm:left-2 select-none bg-transparent text-neutral z-10 opacity-50">
-                      unavailable
-                    </span>
-                    <button className="btn btn-accent w-full sm:w-36 cursor-default bg-transparent z-0 hover:bg-transparent text-neutral btn-disabled border border-accent/40">
-                      Download CV
-                    </button>
-                  </div>
+                <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-5 my-5">
+                  <a
+                    href={cv}
+                    download="CV - Marcos V Fitzsimons"
+                    className="btn-hover btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/80 rounded-md hire-me w-full sm:w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent hover:shadow-accent/30"
+                  >
+                    Download CV
+                  </a>
+
                   <Link
                     to="contact"
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="btn-hover btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/80 rounded-md hire-me w-full sm:w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent/80"
+                    className="btn-hover btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/80 rounded-md w-full sm:w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent hover:shadow-accent/30"
                   >
                     Hire Me
                   </Link>
