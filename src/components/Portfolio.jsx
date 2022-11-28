@@ -26,6 +26,7 @@ const sectionVariants = {
     },
   },
 };
+
 const Portfolio = () => {
   const projectsData = [
     {
@@ -123,6 +124,7 @@ const Portfolio = () => {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
       >
         <div className="row">
           <div className="portfolio__title basis-full grow-0 shrink-0 max-w-full mb-[60px]">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { useInView } from "framer-motion";
@@ -9,8 +10,6 @@ import cv from "../assets/cv-marcos-fitzsimons.pdf";
 // Cv - Learn a bit more about me and my experience. ?
 
 const About = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
   const tools = [
     {
       id: uuidv4(),
@@ -50,19 +49,31 @@ const About = () => {
     },
   ];
 
+  const sectionVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
     <section
       className="about bg-primary section text-neutral min-h-screen"
       name="about"
     >
-      <div
+      <motion.div
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
         className="container pt-[60px] pb-[70px]"
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.15s",
-        }}
       >
         <div className="row">
           <div className="basis-full grow-0 shrink-0 py-4 max-w-full mb-[60px]">
@@ -133,7 +144,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

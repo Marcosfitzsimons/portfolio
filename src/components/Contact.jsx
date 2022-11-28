@@ -6,7 +6,7 @@ import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import { MdLanguage } from "react-icons/md";
 import { useRef } from "react";
 import Footer from "./Footer";
-import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import "animate.css";
 
 const Contact = () => {
@@ -20,9 +20,6 @@ const Contact = () => {
     message: "",
     reply_to: "",
   });
-
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -51,19 +48,31 @@ const Contact = () => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
+  const sectionVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
     <section
       className="contact section text-neutral min-h-screen"
       title="contact"
     >
-      <div
+      <motion.div
         className="container"
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.15s",
-        }}
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
       >
         <div className="row">
           <div className="basis-full grow-0 shrink-0 py-4 max-w-full mb-[60px]">
@@ -182,7 +191,7 @@ const Contact = () => {
           </div>
         </div>
         <Footer />
-      </div>
+      </motion.div>
     </section>
   );
 };
