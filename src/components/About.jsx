@@ -125,7 +125,7 @@ const About = () => {
                   <a
                     href={cv}
                     download="CV - Marcos V Fitzsimons"
-                    className="btn btn-accent bg-accent/90 shadow-md shadow-neutral/10 text-slate-100 transition-colors w-full sm:w-auto hover:bg-transparent hover:border-accent hover:text-slate-300 hover:shadow-accent/30"
+                    className="btn btn-accent bg-accent/90 shadow-md shadow-neutral/10 text-slate-100 transition-colors w-full sm:w-auto hover:bg-transparent hover:border-accent hover:text-white hover:shadow-accent/30"
                   >
                     Download CV
                   </a>

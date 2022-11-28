@@ -20,7 +20,7 @@ const Footer = () => {
           </a>
         </div>
         <ul className="social-links-list flex items-center gap-3 p-3">
-          <li className="social-link pr-2 border-r border-r-accent/20">
+          <li className="social-link pr-2 border-r border-r-zinc-700/60">
             <a
               href="https://github.com/Marcosfitzsimons"
               target="_blank"
@@ -30,7 +30,7 @@ const Footer = () => {
               <RiGithubFill className="text-2xl hover:text-accent/70 text-accent cursor-pointer text-center hover:scale-105 transition-all duration-200" />
             </a>
           </li>
-          <li className="social-link pr-2 border-r border-r-accent/20">
+          <li className="social-link pr-2 border-r border-r-zinc-800">
             <a
               href="https://www.frontendmentor.io/profile/Marcosfitzsimons"
               target="_blank"

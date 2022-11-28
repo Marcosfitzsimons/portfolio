@@ -155,7 +155,7 @@ const Contact = () => {
                 <div className="form-item col-12 py-4 w-full flex justify-center">
                   <button
                     type="submit"
-                    className="btn btn-accent bg-accent/90 text-slate-100 transition-colors w-full sm:w-auto hover:bg-transparent hover:border-accent hover:text-slate-300 hover:shadow-md hover:shadow-accent/30"
+                    className="btn btn-accent bg-accent/90 text-slate-100 transition-colors w-full sm:w-auto hover:bg-transparent hover:border-accent hover:text-white hover:shadow-md hover:shadow-accent/30"
                   >
                     {isLoading ? "Sending..." : "Send message"}
                   </button>
