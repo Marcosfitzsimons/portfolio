@@ -1,21 +1,32 @@
 import React from "react";
-import projectBookmarkImg from "../assets/project-bookmark.webp";
-import projectCalculatorImg from "../assets/project-calculator.webp";
-import projectEcommerce from "../assets/project-ecommerce.webp";
-import projectSpaceTourismImg from "../assets/project-space-tourism.webp";
-import projectPaisaflixImg from "../assets/project-paisaflix.webp";
-import projectAdvice from "../assets/project-advice.webp";
-import projectTodoImg from "../assets/project-todo-app.webp";
-import projectHoobank from "../assets/project-hoobank.webp";
-import PortfolioItem from "./PortfolioItem";
 import { RiGithubFill } from "react-icons/ri";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
+import PortfolioItem from "./PortfolioItem";
+import {
+  projectBookmarkImg,
+  projectCalculatorImg,
+  projectEcommerce,
+  projectSpaceTourismImg,
+  projectPaisaflixImg,
+  projectAdvice,
+  projectTodoImg,
+  projectHoobank,
+} from "./index";
 
+const sectionVariants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
 const Portfolio = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   const projectsData = [
     {
       id: 1,
@@ -107,14 +118,11 @@ const Portfolio = () => {
       className="portfolio section text-neutral min-h-screen"
       name="portfolio"
     >
-      <div
+      <motion.div
         className="container pb-10 relative"
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.15s",
-        }}
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
       >
         <div className="row">
           <div className="portfolio__title basis-full grow-0 shrink-0 max-w-full mb-[60px]">
@@ -146,7 +154,7 @@ const Portfolio = () => {
             </a>
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

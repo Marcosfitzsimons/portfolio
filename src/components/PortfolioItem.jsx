@@ -6,7 +6,21 @@ import { BsChevronDoubleDown, BsChevronDoubleUp } from "react-icons/bs";
 const PortfolioItem = ({ project }) => {
   const [isShown, setIsShown] = useState(false);
 
-  const projectDetails = {
+  const projectVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
+  const detailsVariants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -19,7 +33,13 @@ const PortfolioItem = ({ project }) => {
   };
 
   return (
-    <motion.article className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative origin-center hover:origin-bottom hover:-translate-y-1 transition-all duration-200 align-middle">
+    <motion.article
+      variants={projectVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="portfolio-item py-4 mt-[1rem] mb-[5rem] max-w-[280px] relative origin-center align-middle hover:origin-bottom hover:-translate-y-1"
+    >
       <div className="portfolio-title-container absolute bg-accent/5 left-[2.2rem] w-[12.5rem] text-center top-[-1.7rem] px-2 t p-1 py-2 rounded-md select-none">
         <h5 className="portfolio-title text-sm">{project.title}</h5>
       </div>
@@ -46,7 +66,7 @@ const PortfolioItem = ({ project }) => {
           {isShown && (
             <motion.div
               className="self-start"
-              variants={projectDetails}
+              variants={detailsVariants}
               initial="hidden"
               animate="show"
             >
