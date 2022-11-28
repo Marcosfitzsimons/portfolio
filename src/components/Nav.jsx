@@ -6,8 +6,6 @@ import {
   RiUserHeartLine,
   RiQuestionAnswerLine,
 } from "react-icons/ri";
-import { Link, animateScroll as scroll } from "react-scroll";
-
 import NavLink from "./NavLink";
 
 const Nav = ({ setIsMenu }) => {
