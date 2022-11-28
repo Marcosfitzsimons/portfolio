@@ -94,7 +94,7 @@ const PortfolioItem = ({ project }) => {
           )}
         </div>
         <div className="portfolio-links-container flex bottom-[-2.5rem] left-0 absolute z-[9] gap-2 justify-center items-center w-full">
-          <div className="btn transition-colors cursor-pointer shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/70 hover:border-accent rounded-md hire-me text-neutral hover:bg-transparent hover:border-accent/80">
+          <div className="btn transition-colors cursor-pointer shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/70 rounded-md text-neutral hover:bg-transparent hover:border-accent hover:shadow-accent/30">
             <a
               href={project.liveSiteUrl}
               target="_blank"
@@ -105,7 +105,7 @@ const PortfolioItem = ({ project }) => {
               Live server
             </a>
           </div>
-          <div className="btn transition-colors cursor-pointer shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/70 hover:border-accent rounded-md hire-me text-neutral hover:bg-transparent hover:border-accent/80">
+          <div className="btn transition-colors cursor-pointer shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/70 rounded-md text-neutral hover:bg-transparent hover:border-accent hover:shadow-accent/30">
             <a
               href={project.repositoryUrl}
               target="_blank"

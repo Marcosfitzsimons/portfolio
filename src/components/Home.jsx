@@ -75,18 +75,18 @@ const Home = () => {
                 smooth={true}
                 offset={-20}
                 duration={800}
-                className="btn-hover btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/80 rounded-md hire-me w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent/80"
+                className="btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/70 rounded-md hire-me w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent hover:shadow-accent/30 transition-colors"
               >
                 <span>About me</span>
               </Link>
               <Link
-                to="about"
+                to="portfolio"
                 smooth={true}
-                offset={-20}
+                offset={0}
                 duration={800}
-                className="btn-hover btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/80 rounded-md hire-me w-[9rem] text-neutral z-20 relative hover:bg-transparent hover:border-accent/80"
+                className="btn shadow-md shadow-neutral/10 overflow-hidden bg-transparent border-accent/70 rounded-md hire-me w-[9rem] text-neutral z-20 relative transition-colors hover:bg-transparent hover:border-accent hover:shadow-accent/30"
               >
-                <span>Projects</span>
+                <span>My Projects</span>
               </Link>
             </div>
           </div>
