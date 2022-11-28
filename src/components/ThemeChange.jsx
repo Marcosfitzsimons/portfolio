@@ -30,7 +30,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="default"
             data-act-class="ACTIVECLASS"
-            className="w-full text-start uppercase tracking-wide text-sm lg:text-base"
+            className="w-full text-start uppercase tracking-wide text-sm"
           >
             emerald
           </button>
@@ -40,7 +40,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="pink"
             data-act-class="ACTIVECLASS"
-            className="w-full text-start uppercase tracking-wide text-sm lg:text-base"
+            className="w-full text-start uppercase tracking-wide text-sm"
           >
             pink
           </button>
@@ -50,7 +50,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="indigo"
             data-act-class="ACTIVECLASS"
-            className="w-full text-start uppercase tracking-wide text-sm lg:text-base"
+            className="w-full text-start uppercase tracking-wide text-sm"
           >
             indigo
           </button>
@@ -60,7 +60,7 @@ const ThemeChange = () => {
           <button
             data-set-theme="yellow"
             data-act-class="ACTIVECLASS"
-            className="w-full text-start uppercase tracking-wide text-sm lg:text-base"
+            className="w-full text-start uppercase tracking-wide text-sm"
           >
             gold
           </button>
