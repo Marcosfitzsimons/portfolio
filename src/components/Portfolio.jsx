@@ -144,7 +144,7 @@ const Portfolio = () => {
           })}
         </div>
         <div className="row text-center py-4 xl:flex">
-          <p className="text-base pb-5 text-base-100 flex flex-col items-center gap-2 lg:flex-row lg:gap-2 xl:bg-accent/10 xl:border xl:border-accent/40 xl:px-2 xl:py-2 xl:rounded-md">
+          <p className="text-slate-200 transition-colors pb-5 flex flex-col items-center gap-2 lg:flex-row lg:gap-2 xl:bg-accent/10 xl:border xl:border-accent/40 xl:px-2 xl:py-2 xl:rounded-md hover:border-accent">
             You can see more of my personal projects in my github account:
             <a
               href="https://github.com/Marcosfitzsimons"

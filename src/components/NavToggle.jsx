@@ -12,7 +12,7 @@ const NavToggle = ({ setIsMenu, isMenu }) => {
       onClick={handleOnClick}
       className={`${
         !isMenu ? "left-[17.9rem] top-[0] rounded-l-none" : "left-7 top-8"
-      } transition-all text-slate-300/90  bg-slate-100/5  flex flex-col items-center justify-center z-20 h-10 w-11 fixed rounded-lg cursor-pointer hover:bg-slate-300/10 hover:text-white lg:hidden`}
+      } transition-all text-slate-300 bg-secondary flex flex-col items-center justify-center z-20 h-10 w-11 fixed rounded-lg cursor-pointer hover:bg-slate-300/10 hover:text-white lg:hidden`}
     >
       {isMenu ? (
         <TbMenu2 className="text-2xl" />
