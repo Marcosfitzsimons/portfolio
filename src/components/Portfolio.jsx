@@ -7,7 +7,7 @@ import {
   projectCalculatorImg,
   projectEcommerce,
   projectSpaceTourismImg,
-  projectPaisaflixImg,
+  projectAdviency,
   projectAdvice,
   projectTodoImg,
   projectHoobank,
@@ -42,13 +42,13 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      image: projectPaisaflixImg,
-      liveSiteUrl: "https://paisaflix-challenge.vercel.app/",
-      repositoryUrl: "https://github.com/Marcosfitzsimons/paisaflix-challenge",
-      title: "Paisaflix - Movie Page",
-      stack: ["Next, ", "React, ", "TailwindCSS"],
+      image: projectAdviency,
+      liveSiteUrl: "https://adviency-app-puce.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/adviency-app",
+      title: "Adviency App",
+      stack: ["Next, ", "React, ", "TailwindCSS, ", "Framer Motion"],
       description:
-        "Paisaflix, my first Next.js 13 project in which I was able to practice the new features such as App dir, routing, loading UI, server and client components as well as my css skills.",
+        "The purpose of this app is to practice, learn by repetition and gain a habit by creating the same app from scratch with a new functionality every day for 24 days in a row.",
     },
     {
       id: 3,
