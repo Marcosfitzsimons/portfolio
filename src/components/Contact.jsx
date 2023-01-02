@@ -4,7 +4,6 @@ import { send } from "emailjs-com";
 import { BsCheckAll } from "react-icons/bs";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import { MdLanguage } from "react-icons/md";
-import { useRef } from "react";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
 import "animate.css";
@@ -61,6 +60,24 @@ const Contact = () => {
       },
     },
   };
+
+  const contactInfo = [
+    {
+      id: 1,
+      text: "Argentina, Buenos Aires",
+      icon: <HiOutlineLocationMarker className="text-2xl text-accent/90" />,
+    },
+    {
+      id: 2,
+      text: "marcosfitzsimons@gmail.com",
+      icon: <HiOutlineMail className="text-2xl text-accent/90" />,
+    },
+    {
+      id: 3,
+      text: "Spanish - English",
+      icon: <MdLanguage className="text-2xl text-accent/90" />,
+    },
+  ];
 
   return (
     <section
@@ -175,19 +192,13 @@ const Contact = () => {
           </div>
         )}
         <div className="py-4 pt-8 contact-info w-full text-base-100">
-          <div className="contact-info-container lg:flex lg:gap-6 lg:justify-center w-full lg:mx-auto">
-            <div className="contact-info__location flex py-2 items-center gap-2">
-              <HiOutlineLocationMarker className="text-2xl text-accent/90 hover:scale-105 transition-all duration-200" />
-              <p className="">Argentina, Buenos Aires</p>
-            </div>
-            <div className="contact-info__email flex py-2 items-center gap-2">
-              <HiOutlineMail className="text-2xl text-accent/90 hover:scale-105 transition-all duration-200" />
-              <p className="">marcosfitzsimons@gmail.com</p>
-            </div>
-            <div className="contact-info__languages flex py-2 items-center gap-2">
-              <MdLanguage className="text-2xl text-accent/90 hover:scale-105 transition-all duration-200" />
-              <p className="">Spanish & English</p>
-            </div>
+          <div className="lg:flex lg:gap-6 lg:justify-center w-full lg:mx-auto">
+            {contactInfo.map((e) => (
+              <div className="flex py-2 items-center gap-2" key={e.id}>
+                {e.icon}
+                <p className="">{e.text}</p>
+              </div>
+            ))}
           </div>
         </div>
         <Footer />
