@@ -61,6 +61,20 @@ const Contact = () => {
     },
   };
 
+  const successMsgVariants = {
+    hidden: {
+      opacity: 0,
+      y: 15,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
   const contactInfo = [
     {
       id: 1,
@@ -182,14 +196,19 @@ const Contact = () => {
           </div>
         )}
         {successMsg && (
-          <div className="alert-success-container py-4 alert-success mt-[2rem] max-w-[550px] mx-auto alert shadow-lg bg-accent text-neutral">
-            <div className="flex flex-col justify-center sm:flex-row text-center">
-              <BsCheckAll className="text-3xl" />
+          <motion.div
+            variants={successMsgVariants}
+            initial="hidden"
+            animate="visible"
+            className="alert-success mt-[2rem] max-w-[550px] mx-auto alert shadow-lg bg-accent/10 border border-accent/40 p-2 rounded-md lg:p-4 hover:border-accent"
+          >
+            <div className="flex flex-col justify-center text-slate-200 text-center transition-colors items-center gap-2 sm:flex-row lg:gap-2">
+              <BsCheckAll className="text-3xl text-accent" />
               <span>
                 Your message has been sent, thank you for contacting me!
               </span>
             </div>
-          </div>
+          </motion.div>
         )}
         <div className="py-4 pt-8 contact-info w-full text-base-100">
           <div className="lg:flex lg:gap-6 lg:justify-center w-full lg:mx-auto">
