@@ -115,7 +115,7 @@ const Contact = () => {
         <h4 className="contact-title py-4 text-center text-3xl text-accent font-semibold">
           Send me an email
         </h4>
-        <h5 className="contact-subtitle py-4 text-center text-lg">
+        <h5 className="contact-subtitle text-slate-200 py-4 text-center text-lg">
           I'm very responsive to messages
         </h5>
         {hiddenForm && (
@@ -215,7 +215,7 @@ const Contact = () => {
             {contactInfo.map((e) => (
               <div className="flex py-2 items-center gap-2" key={e.id}>
                 {e.icon}
-                <p className="">{e.text}</p>
+                <p className="text-slate-200">{e.text}</p>
               </div>
             ))}
           </div>

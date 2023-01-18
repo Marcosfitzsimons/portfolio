@@ -90,15 +90,15 @@ const About = () => {
                   I'm Marcos Fitzsimons,{" "}
                   <span className="text-accent">Front-End Developer</span>
                 </h4>
-                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[70%] my-5">
+                <p className="text-slate-200 leading-6 xl:w-[85%] lg:text-lg 2xl:w-[70%] my-5">
                   I'm a self-taught student, currently focusing on studying the
                   basics of Javascript & Front-end Development.
                 </p>
-                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[60%] my-5">
+                <p className="text-slate-200 leading-6 xl:w-[85%] lg:text-lg 2xl:w-[60%] my-5">
                   Since 2021 I have been studying and putting into practice what
                   I learn through personal projects.
                 </p>
-                <p className="text-base leading-6 text-base-100 xl:w-[85%] lg:text-lg 2xl:w-[60%] my-5">
+                <p className="text-slate-200 leading-6 xl:w-[85%] lg:text-lg 2xl:w-[60%] my-5">
                   I like to learn by doing and I think this is the best way to
                   learn something new.
                 </p>
