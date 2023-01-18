@@ -3,7 +3,7 @@ import { RiGithubFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import PortfolioItem from "./PortfolioItem";
 import {
-  projectBookmarkImg,
+  projectRestCountries,
   projectCalculatorImg,
   projectEcommerce,
   projectSpaceTourismImg,
@@ -73,14 +73,13 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      image: projectCalculatorImg,
-      liveSiteUrl: "https://calculator-app-w-react.vercel.app/",
-      repositoryUrl:
-        "https://github.com/Marcosfitzsimons/calculator-app-w-react",
-      title: "Calculator React App",
-      stack: ["React, ", "CSS"],
+      image: projectRestCountries,
+      liveSiteUrl: "https://rest-countries-app-five.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/rest-countries-app",
+      title: "Rest Countries App",
+      stack: ["React, ", "Next, ", "TailwindCSS"],
       description:
-        "A calculator made with react that allows to do basic mathematical operations.",
+        "Project in which I have been able to practice how to interact with an external API with the new Next.js 13 fetch data methods. View all countries, search for a country, filter countries by region are some of the functions that meet this challenge.",
     },
     {
       id: 6,
@@ -100,17 +99,18 @@ const Portfolio = () => {
       title: "Advice Generator App",
       stack: ["HTML, ", "CSS, ", "Javascript"],
       description:
-        "A simple advice generator app that allows users to generate a new piece of advice by clicking the dice icon",
+        "A simple advice generator app that allows users to generate a new piece of advice by clicking the dice icon.",
     },
     {
       id: 8,
-      image: projectBookmarkImg,
-      liveSiteUrl: "https://bookmark-react-app.vercel.app/",
-      repositoryUrl: "https://github.com/Marcosfitzsimons/bookmark-react-app",
-      title: "Bookmark React App",
-      stack: ["React, ", "TailwindCSS, ", "DaisyUI"],
+      image: projectCalculatorImg,
+      liveSiteUrl: "https://calculator-app-w-react.vercel.app/",
+      repositoryUrl:
+        "https://github.com/Marcosfitzsimons/calculator-app-w-react",
+      title: "Calculator React App",
+      stack: ["React, ", "CSS"],
       description:
-        "Bookmark app, project in which I was able to practice my layout skills. I was also able to learn how to use some DaisyUI components.",
+        "A calculator made with react that allows to do basic mathematical operations.",
     },
   ];
 

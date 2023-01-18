@@ -1,4 +1,4 @@
-import projectBookmarkImg from "../assets/project-bookmark.webp";
+import projectRestCountries from "../assets/project-rest-countries.webp";
 import projectCalculatorImg from "../assets/project-calculator.webp";
 import projectEcommerce from "../assets/project-ecommerce.webp";
 import projectSpaceTourismImg from "../assets/project-space-tourism.webp";
@@ -8,7 +8,7 @@ import projectTodoImg from "../assets/project-todo-app.webp";
 import projectHoobank from "../assets/project-hoobank.webp";
 
 export {
-    projectBookmarkImg,
+    projectRestCountries,
     projectCalculatorImg,
     projectEcommerce,
     projectSpaceTourismImg,
