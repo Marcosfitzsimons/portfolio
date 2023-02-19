@@ -33,15 +33,19 @@ const PortfolioItem = ({ project }) => {
         </div>
         <div className="flex flex-col items-center gap-1 px-2 mt-1 justify-center">
           {isShown ? (
-            <BsChevronDoubleUp
-              className="text-xl cursor-pointer text-neutral/90 hover:text-neutral"
-              onClick={handleIsShown}
-            />
+            <div className="tooltip tooltip-right" data-tip="Show less">
+              <BsChevronDoubleUp
+                className="text-xl cursor-pointer text-neutral/90 hover:text-neutral"
+                onClick={handleIsShown}
+              />
+            </div>
           ) : (
-            <BsChevronDoubleDown
-              className="text-xl cursor-pointer text-neutral/90 hover:text-neutral"
-              onClick={handleIsShown}
-            />
+            <div className="tooltip tooltip-right" data-tip="Show more">
+              <BsChevronDoubleDown
+                className="text-xl cursor-pointer text-neutral/90 hover:text-neutral"
+                onClick={handleIsShown}
+              />
+            </div>
           )}
           {isShown && (
             <motion.div
