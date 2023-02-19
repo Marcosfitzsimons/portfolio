@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import PortfolioItem from "./PortfolioItem";
 import {
   projectRestCountries,
-  projectCalculatorImg,
+  projectMultiStepForm,
   projectEcommerce,
   projectSpaceTourismImg,
   projectAdviency,
@@ -31,6 +31,16 @@ const Portfolio = () => {
   const projectsData = [
     {
       id: 1,
+      image: projectMultiStepForm,
+      liveSiteUrl: "https://multi-step-form-tawny.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons",
+      title: "Multi Step Form",
+      stack: ["Next, ", "React ", "TailwindCSS ", "Framer Motion"],
+      description:
+        "A Multi Step Form with a great design, allowed me to understand how to manage and validate user data between each form component.",
+    },
+    {
+      id: 2,
       image: projectEcommerce,
       liveSiteUrl: "https://ecommerce-product-page-coral-nine.vercel.app/",
       repositoryUrl:
@@ -41,7 +51,7 @@ const Portfolio = () => {
         "Ecommerce product page that allows the user to add items to and remove them from the cart, as well as change the large product image by clicking on small thumbnail images.",
     },
     {
-      id: 2,
+      id: 3,
       image: projectAdviency,
       liveSiteUrl: "https://adviency-app-puce.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons/adviency-app",
@@ -51,7 +61,7 @@ const Portfolio = () => {
         "The purpose of this app is to practice, learn by repetition and gain a habit by creating the same app from scratch with a new functionality every day for 24 days in a row.",
     },
     {
-      id: 3,
+      id: 4,
       image: projectSpaceTourismImg,
       liveSiteUrl: "https://space-tourism-website-lyart.vercel.app/",
       repositoryUrl:
@@ -60,16 +70,6 @@ const Portfolio = () => {
       stack: ["React, ", "TailwindCSS, ", "Framer Motion"],
       description:
         "Space tourism multi-page website, good to practice my css skills, react-router-dom v6.3, animations between pages and also accessibility.",
-    },
-    {
-      id: 4,
-      image: projectTodoImg,
-      liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
-      repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
-      title: "Todo React App",
-      stack: ["React, ", "TailwindCSS"],
-      description:
-        "Todo App that allows users to add new todos to the list, mark todos as complete, delete todos from the list, filter by all/active/complete...",
     },
     {
       id: 5,
@@ -103,14 +103,13 @@ const Portfolio = () => {
     },
     {
       id: 8,
-      image: projectCalculatorImg,
-      liveSiteUrl: "https://calculator-app-w-react.vercel.app/",
-      repositoryUrl:
-        "https://github.com/Marcosfitzsimons/calculator-app-w-react",
-      title: "Calculator React App",
-      stack: ["React, ", "CSS"],
+      image: projectTodoImg,
+      liveSiteUrl: "https://todo-react-app-pi.vercel.app/",
+      repositoryUrl: "https://github.com/Marcosfitzsimons/todo-react-app",
+      title: "Todo React App",
+      stack: ["React, ", "TailwindCSS"],
       description:
-        "A calculator made with react that allows to do basic mathematical operations.",
+        "Todo App that allows users to add new todos to the list, mark todos as complete, delete todos from the list, filter by all/active/complete...",
     },
   ];
 

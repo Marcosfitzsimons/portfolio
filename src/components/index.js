@@ -1,5 +1,5 @@
 import projectRestCountries from "../assets/project-rest-countries.webp";
-import projectCalculatorImg from "../assets/project-calculator.webp";
+import projectMultiStepForm from "../assets/project-multistepform.webp";
 import projectEcommerce from "../assets/project-ecommerce.webp";
 import projectSpaceTourismImg from "../assets/project-space-tourism.webp";
 import projectAdviency from "../assets/project-adviency.webp";
@@ -9,7 +9,7 @@ import projectHoobank from "../assets/project-hoobank.webp";
 
 export {
     projectRestCountries,
-    projectCalculatorImg,
+    projectMultiStepForm,
     projectEcommerce,
     projectSpaceTourismImg,
     projectAdviency,
