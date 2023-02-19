@@ -9,6 +9,7 @@ const NavLink = ({ navLink, setActive, active, setIsMenu }) => {
   return (
     <li className="nav-list__item mb-6 block">
       <Link
+        tabIndex={0}
         onClick={handleOnClick}
         to={navLink.to}
         smooth={true}
