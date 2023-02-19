@@ -25,43 +25,51 @@ const ThemeChange = () => {
         <FaPalette className="text-neutral/80" />
       </div>
       <ul className="flex flex-col w-full py-3 px-1 pr-2 rounded-bl-lg bg-secondary z-50">
-        <li className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60">
-          <div className={`badge badge-lg bg-[#0d9488] border-secondary`}></div>
+        <li className="text-slate-300">
           <button
             data-set-theme="default"
             data-act-class="ACTIVECLASS"
-            className="w-full text-start uppercase tracking-wide text-sm"
+            className="flex items-center gap-3 w-full text-start uppercase tracking-wide text-sm p-2 bg-transparent hover:text-white hover:bg-zinc-700/60 rounded-lg"
           >
+            <span
+              className={`badge badge-lg bg-[#0d9488] border-secondary`}
+            ></span>
             emerald
           </button>
         </li>
-        <li className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60">
-          <div className={`badge badge-lg bg-[#df4996] border-secondary`}></div>
+        <li className="text-slate-300">
           <button
             data-set-theme="pink"
             data-act-class="ACTIVECLASS"
-            className="w-full text-start uppercase tracking-wide text-sm"
+            className="flex items-center gap-3 w-full text-start uppercase tracking-wide text-sm p-2 bg-transparent hover:text-white hover:bg-zinc-700/60 rounded-lg"
           >
+            <span
+              className={`badge badge-lg bg-[#df4996] border-secondary`}
+            ></span>
             pink
           </button>
         </li>
-        <li className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60">
-          <div className={`badge badge-lg bg-[#818cf8] border-secondary`}></div>
+        <li className="text-slate-300">
           <button
             data-set-theme="indigo"
             data-act-class="ACTIVECLASS"
-            className="w-full text-start uppercase tracking-wide text-sm"
+            className="flex items-center gap-3 w-full text-start uppercase tracking-wide text-sm p-2 bg-transparent hover:text-white hover:bg-zinc-700/60 rounded-lg"
           >
+            <span
+              className={`badge badge-lg bg-[#818cf8] border-secondary`}
+            ></span>
             indigo
           </button>
         </li>
-        <li className="flex items-center gap-3 text-slate-300 hover:text-white p-2 rounded-lg hover:bg-zinc-700/60">
-          <div className={`badge badge-lg bg-[#EAB308] border-secondary`}></div>
+        <li className="text-slate-300">
           <button
             data-set-theme="yellow"
             data-act-class="ACTIVECLASS"
-            className="w-full text-start uppercase tracking-wide text-sm"
+            className="flex items-center gap-3 w-full text-start uppercase tracking-wide text-sm p-2 bg-transparent hover:text-white hover:bg-zinc-700/60 rounded-lg"
           >
+            <span
+              className={`badge badge-lg bg-[#EAB308] border-secondary`}
+            ></span>
             gold
           </button>
         </li>
