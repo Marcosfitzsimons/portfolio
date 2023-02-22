@@ -35,9 +35,9 @@ const Portfolio = () => {
       liveSiteUrl: "https://multi-step-form-tawny.vercel.app/",
       repositoryUrl: "https://github.com/Marcosfitzsimons",
       title: "Multi Step Form",
-      stack: ["Next, ", "React ", "TailwindCSS ", "Framer Motion"],
+      stack: ["Next, ", "React, ", "TypeScript, ", "TailwindCSS"],
       description:
-        "A Multi Step Form with a great design, allowed me to understand how to manage and validate user data between each form component.",
+        "A Multi Step Form with a great design, allowed me to use RadixUI components and understand how to manage and validate user data between each form step.",
     },
     {
       id: 2,
